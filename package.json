@@ -1,0 +1,28 @@
+{
+  "name": "wobbier-node",
+  "version": "0.0.1",
+  "description": "My personal website.",
+  "main": "wobbier.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wobbier/wobbier"
+  },
+  "keywords": [
+    "node",
+    "wobbier",
+    "website"
+  ],
+  "author": "Mitchell Andrews",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wobbier/wobbier/issues"
+  },
+  "homepage": "https://github.com/wobbier/wobbier",
+  "dependencies": {
+    "logfmt": "~0.21.0",
+    "express": "~3.4.8"
+  }
+}

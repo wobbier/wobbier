@@ -1,0 +1,46 @@
+// web.js
+var express = require("express"),
+	logfmt = require("logfmt"),
+	mu = require('mu2'),
+    util = require('util'),
+	path = require('path'),
+	layout = require(__dirname + '/core/layout.js'),
+	app = express();
+
+//add some standard express middleware
+app.configure(function() {
+    app.use(express.logger('dev')); /* 'default', 'short', 'tiny', 'dev' */
+    app.use(express.bodyParser());
+    app.use(express.cookieParser());
+	app.use(logfmt.requestLogger());
+	app.use(express.static(__dirname + '/public'));
+	mu.root = __dirname + '/views';
+	mu.clearCache();
+});
+
+app.get('/', function(req, res) {
+    var index = require(__dirname + '/data/index.js');
+    layout.render(res, 'index.ms', index.data, function (stream) {
+        stream.pipe(res);
+    });
+});
+
+app.get('/blog', function(req, res) {
+    var blog = require(__dirname + '/data/blog.js');
+    layout.render(res, 'blog.ms', blog.data, function (stream) {
+        stream.pipe(res);
+    });
+});
+
+app.get('/css/theme.css', function(req, res) {
+	var colors = ['249,87,48', '254,55,74', '110,167,60', '90,177,168', '186,40,51', '206,76,44', '52,130,82'];
+	var color = colors[Math.floor(Math.random()*colors.length)];
+	res.writeHeader(200, {"Content-Type": "text/css"});
+	res.write("body, .block{background: rgb("+color+")}");
+	res.end();
+});
+
+var port = Number(process.env.PORT || 9292);
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});

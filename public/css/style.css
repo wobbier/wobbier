@@ -1,0 +1,243 @@
+@import  url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
+
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	margin: 0;
+	padding: 0;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+	display: block;
+}
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	line-height: 1;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+	color: #fff;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+	font-size: 16px;
+}
+
+ol,ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content: ' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+a {
+	color: #fff;
+}
+
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+
+#header {
+	width: 960px;
+	display: block;
+	margin: 30px 0;
+	position: relative;
+}
+
+#footer {
+	opacity: 0.8;
+	text-align: center;
+	margin: 30px 0;
+}
+
+#footer a {
+	opacity: 0.5;
+}
+
+#footer a:hover {
+	opacity: 1;
+}
+
+#logo {
+	display: block;
+}
+
+#nav {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+#nav ul {
+	margin: 0;
+}
+
+#nav ul li {
+	float: right;
+	list-style: none;
+	margin: 0 10px;
+	opacity: 0.90;
+}
+
+#nav ul li:hover {
+	opacity: 1;
+}
+
+#portfolio {
+	padding: 0;
+}
+
+.block {
+	width: 5px;
+	height: 5px;
+	position: absolute;
+}
+
+.block.left {
+	left: 0;
+}
+
+.block.right {
+	right: 0;
+}
+
+.block.top {
+	top: 0;
+}
+
+.block.bottom {
+	bottom: 0;
+}
+
+li.right {
+	margin-right: 0 !important;
+}
+
+.home {
+	background: rgba(255,255,255,0.2);
+	font-size: 24px;
+}
+
+.home p {
+	padding: 0 10px 5px;
+}
+
+.tweet {
+	background: rgba(255,255,255,0.2);
+	margin-bottom: 15px;
+	padding: 10px;
+}
+
+.content {
+	width: 960px;
+	padding: 10px 0;
+}
+
+.content,.col,.postImage,.postTitle,.postContent,.tweet {
+	position: relative;
+}
+
+p {
+	line-height: 25px;
+}
+
+.col {
+	width: 310px;
+	float: left;
+	margin: 0 5px 10px;
+}
+
+.col a {
+	display: block;
+	background: rgba(255,255,255,0.2);
+	padding: 10px;
+}
+
+.col a img {
+	display: block;
+	width: 290px;
+	height: 218px;
+	margin: 0;
+}
+
+.post {
+	margin-bottom: 10px;
+}
+
+.post .postImage img {
+	width: 455px;
+	height: auto;
+	display: block;
+}
+
+.post .postImage {
+	float: left;
+	background: rgba(255,255,255,0.2);
+	padding: 10px;
+	width: 455px;
+}
+
+.post .postTitle {
+	width: 455px;
+	padding: 10px 10px 10px 20px;
+	float: left;
+	margin: 0 0 10px;
+	background: rgba(255,255,255,0.2);
+}
+
+.post .postTitle h1 {
+	font-size: 18px;
+}
+
+.post .postContent {
+	width: 455px;
+	float: left;
+	margin-left: 10px;
+	padding: 5px 10px;
+	background: rgba(255,255,255,0.1);
+	font-size: 16px;
+}
+#project .title {
+	position: relative;
+	margin-bottom: 10px;
+	background: rgba(255,255,255,0.2);
+	padding: 10px;
+}
+#project iframe {
+	display: block;
+	margin: auto;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}

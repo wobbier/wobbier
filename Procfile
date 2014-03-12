@@ -1,1 +1,1 @@
-web: node wobbier.js
+web: node app.js

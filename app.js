@@ -20,15 +20,30 @@ app.configure(function() {
 
 app.get('/', function(req, res) {
     var index = require(__dirname + '/data/index.js');
-    layout.render(res, 'index.ms', index.data, function (stream) {
-        stream.pipe(res);
+    index.loadData(function (data) {
+        layout.render(res, 'index.ms', data, function (stream) {
+            stream.pipe(res);
+        });
+    });
+});
+
+app.get('/game/:id', function (req, res) {
+    var id = req.params.id;
+    console.log(id);
+    var game = require(__dirname + '/data/index.js');
+    game.getGame(id, function (data) {
+        layout.render(res, 'game.ms', data, function (stream) {
+            stream.pipe(res);
+        });
     });
 });
 
 app.get('/blog', function(req, res) {
     var blog = require(__dirname + '/data/blog.js');
-    layout.render(res, 'blog.ms', blog.data, function (stream) {
-        stream.pipe(res);
+    blog.loadPosts(function (data) {
+        layout.render(res, 'blog.ms', data, function (stream) {
+            stream.pipe(res);
+        });
     });
 });
 
@@ -38,6 +53,13 @@ app.get('/css/theme.css', function(req, res) {
 	res.writeHeader(200, {"Content-Type": "text/css"});
 	res.write("body, .block{background: rgb("+color+")}");
 	res.end();
+});
+
+app.get('/css/:id.css', function (req, res) {
+    var id = req.params.id;
+    res.writeHeader(200, { "Content-Type": "text/css" });
+    res.write("body {background: url('/img/" + id + "-cover.png'); background-size: cover; background-repeat: no-repeat;}");
+    res.end();
 });
 
 var port = Number(process.env.PORT || 9292);

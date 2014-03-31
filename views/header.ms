@@ -7,12 +7,15 @@
 	<title>{{title}}</title>
 	<link href="/css/style.css" rel="stylesheet" type="text/css">
 	<link href="/css/theme.css" rel="stylesheet" type="text/css">
+{{#customCover}}
+	<link href="/css/{{slug}}.css" rel="stylesheet" type="text/css">
+{{/customCover}}
 	<meta content="-xwR0iZlTA0I0eiL4y5ZNaQib2lM1gIgqBXCBdgXvmQ" name="google-site-verification">
 </head>
 <body>
 	<div class="wrapper">
 		<div id="header">
-			<div id="logo"><img src="/img/logo.png"></div>
+			<div id="logo"><img src="/img/wobbier-logo.png"></div>
 			<div id="nav">
 				<ul>
 					<li class="right"><a href="/blog"><img src="/img/blog.png"></a></li>
@@ -20,3 +23,4 @@
 				</ul>
 			</div>
 		</div>
+		<div class="clearfix">

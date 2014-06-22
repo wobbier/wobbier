@@ -18,7 +18,7 @@
 						<div class="block bottom left"></div>
 						<div class="block top right"></div>
 						<div class="block bottom right"></div>
-						<p>{{content}}</p>
+						<p>{{{content}}}</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>

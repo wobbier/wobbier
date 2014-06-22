@@ -27,6 +27,7 @@ exports.loadPosts = function (cb) {
                 }
                 mongoose.connection.close();
                 cb({
+                    title: "Blog | Mitch Andrews | Game Developer",
                     posts: docs
                 });
             });

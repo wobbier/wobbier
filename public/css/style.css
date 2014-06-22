@@ -241,6 +241,11 @@ p {
 	background: rgba(255,255,255,0.1);
 	font-size: 16px;
 }
+
+.post .postContent a {
+    text-decoration: underline;
+}
+
 /* GAMES */
 #gamesHeader {
     text-align: center;

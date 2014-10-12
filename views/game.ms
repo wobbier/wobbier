@@ -1,7 +1,7 @@
-﻿</div>
+</div>
 {{#games}}
 <div id="gameTitle" style="text-align:center;">
-	<img src="/img/{{slug}}-title.png" />
+	<img src="https://dl.dropboxusercontent.com/u/14759830/Portfolio/{{slug}}-title.png" />
 </div>
 {{#isUnity}}
 		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>

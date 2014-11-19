@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var moment = require('moment');
-var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/app22656752';
+var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://dev:alpine@oceanic.mongohq.com:10008/app22656752'; //'mongodb://localhost/app22656752';
 var PostSchema = new mongoose.Schema({
     _id: String,
     title: String,

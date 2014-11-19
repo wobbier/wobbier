@@ -32,6 +32,10 @@ app.get('/game/:id', function (req, res) {
     console.log(id);
     var game = require(__dirname + '/data/index.js');
     game.getGame(id, function (data) {
+	    if(data.external === true){
+		    res.redirect(data.url);
+		    return;
+	    }
         layout.render(res, 'game.ms', data, function (stream) {
             stream.pipe(res);
         });

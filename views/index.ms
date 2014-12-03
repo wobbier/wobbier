@@ -10,7 +10,7 @@
     </div>
 </div>
 <div id="gamesHeader">
-    <img src="/img/games.png"></img>
+    <img src="/img/portfolio.png"></img>
 </div>
 <div id="content">
     <div class="games">

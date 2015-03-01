@@ -57,7 +57,7 @@
             <div class="block bottom left"></div>
             <div class="block bottom right"></div>
             <a href="/game/{{slug}}">
-                <img src="/img/profile.png" />
+                <img src="/img/Profile.png" />
             </a>
         </div>
         <div class="title">

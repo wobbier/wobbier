@@ -56,7 +56,7 @@
             <div class="block top left"></div>
             <div class="block bottom left"></div>
             <div class="block bottom right"></div>
-            <a href="/game/{{slug}}">
+            <a href="http://twitter.com/wobbier">
                 <img src="/img/Profile.png" />
             </a>
         </div>

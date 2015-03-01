@@ -1,315 +1,462 @@
-@import  url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
 
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	margin: 0;
-	padding: 0;
-}
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-	display: block;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
 html {
-	-webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
 }
 body {
-	line-height: 1;
-	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-	font-weight: 300;
-	color: #fff;
-	text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
-	font-size: 16px;
+    line-height: 1;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+    font-size: 16px;
 }
-
-ol,ul {
-	list-style: none;
+ol,
+ul {
+    list-style: none;
 }
-
-blockquote,q {
-	quotes: none;
+blockquote,
+q {
+    quotes: none;
 }
-
-blockquote:before,blockquote:after,q:before,q:after {
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none;
 }
-
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
-
 .clearfix:after {
-	clear: both;
-	content: ' ';
-	display: block;
-	font-size: 0;
-	line-height: 0;
-	visibility: hidden;
-	width: 0;
-	height: 0;
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
-
 .clearfix {
-	clear: both;
-	content: ' ';
-	display: block;
-	font-size: 0;
-	line-height: 0;
-	visibility: hidden;
-	width: 0;
-	height: 0;
+    clear: both;
+    content: ' ';
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
 }
-
 a {
-	color: #fff;
+    color: #fff;
 }
-
 .wrapper {
-	width: 960px;
-	margin: 0 auto;
-	position: relative;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
 }
-
 #header {
-	width: 960px;
-	display: block;
-	margin: 30px 0;
-	position: relative;
+    width: 960px;
+    display: block;
+    margin: 30px 0;
+    position: relative;
 }
-
 #footer {
-	opacity: 0.8;
-	text-align: center;
-	margin: 30px 0;
+    opacity: 0.8;
+    text-align: center;
+    margin: 30px 0;
 }
-
 #footer a {
-	opacity: 0.5;
+    opacity: 0.5;
 }
-
 #footer a:hover {
-	opacity: 1;
+    opacity: 1;
 }
-
 #logo {
-	display: block;
+    display: block;
 }
-
 #nav {
-	position: absolute;
-	right: 0;
-	top: 10px;
+    position: absolute;
+    right: 0;
+    top: 10px;
 }
-
 #nav ul {
-	margin: 0;
+    margin: 0;
 }
-
 #nav ul li {
-	float: right;
-	list-style: none;
-	margin: 0 10px;
-	opacity: 0.90;
+    float: right;
+    list-style: none;
+    margin: 0 10px;
+    opacity: 0.90;
 }
-
 #nav ul li:hover {
-	opacity: 1;
+    opacity: 1;
 }
-
 #portfolio {
-	padding: 0;
+    padding: 0;
 }
-
 .block {
-	width: 5px;
-	height: 5px;
-	position: absolute;
+    width: 5px;
+    height: 5px;
+    position: absolute;
 }
-
 .block.left {
-	left: 0;
+    left: 0;
 }
-
 .block.right {
-	right: 0;
+    right: 0;
 }
-
 .block.top {
-	top: 0;
+    top: 0;
 }
-
 .block.bottom {
-	bottom: 0;
+    bottom: 0;
 }
-
 li.right {
-	margin-right: 0 !important;
+    margin-right: 0 !important;
 }
-
 .home {
-	background: rgba(255,255,255,0.2);
-	font-size: 24px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 24px;
     padding: 10px 5px;
 }
-
 .home p {
-	padding: 0 10px 5px;
+    padding: 0 10px 5px;
 }
-
 .tweet {
-	background: rgba(255,255,255,0.2);
-	margin-bottom: 15px;
-	padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    margin-bottom: 15px;
+    padding: 10px;
 }
-
 #content {
-	width: 960px;
-	padding: 10px 0;
+    width: 960px;
+    padding: 10px 0;
 }
-
 #gameTitle {
-	width: 960px;
+    width: 960px;
     text-align: center;
     margin-bottom: 20px;
 }
-
-.home,.col,.postImage,.postTitle,.postContent,.gameThumb,.gameTitle,.gameContent,.tweet {
-	position: relative;
+.home,
+.col,
+.postImage,
+.postTitle,
+.postContent,
+.gameThumb,
+.gameTitle,
+.gameContent,
+.tweet {
+    position: relative;
 }
-
 p {
-	line-height: 25px;
+    line-height: 25px;
 }
-
 .col {
-	width: 310px;
-	float: left;
-	margin: 0 5px 10px;
+    width: 310px;
+    float: left;
+    margin: 0 5px 10px;
 }
-
 .col a {
-	display: block;
-	background: rgba(255,255,255,0.2);
-	padding: 10px;
+    display: block;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
 }
-
 .col a img {
-	display: block;
-	width: 290px;
-	height: 218px;
-	margin: 0;
+    display: block;
+    width: 290px;
+    height: 218px;
+    margin: 0;
 }
 /* BLOG */
+
 .post {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 .post .postImage img {
-	width: 455px;
-	height: auto;
-	display: block;
+    width: 455px;
+    height: auto;
+    display: block;
 }
-
 .post .postImage {
-	float: left;
-	background: rgba(255,255,255,0.2);
-	padding: 10px;
-	width: 455px;
+    float: left;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    width: 455px;
 }
-
 .post .postTitle {
-	width: 455px;
-	padding: 10px 10px 10px 20px;
-	float: left;
-	margin: 0 0 10px;
-	background: rgba(255,255,255,0.2);
+    width: 455px;
+    padding: 10px 10px 10px 20px;
+    float: left;
+    margin: 0 0 10px;
+    background: rgba(255, 255, 255, 0.2);
 }
-
 .post .postTitle h1 {
-	font-size: 18px;
+    font-size: 18px;
 }
-
 .post .postContent {
-	width: 455px;
-	float: left;
-	margin-left: 10px;
-	padding: 5px 10px;
-	background: rgba(255,255,255,0.1);
-	font-size: 16px;
+    width: 455px;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
 }
-
-.post .postContent a, .game .gameContent a {
+.post .postContent a,
+.game .gameContent a {
     text-decoration: underline;
 }
-
 /* GAMES */
+
 #gamesHeader {
     text-align: center;
     margin: 20px 0px;
 }
-
 .game {
-	margin-bottom: 10px;
+    margin-bottom: 10px;
 }
-
 .game .gameThumb img {
-	display: block;
-	max-width: 290px;
+    display: block;
+    max-width: 290px;
 }
-
-.game .gameThumb{
-	float: left;
-	background: rgba(255,255,255,0.2);
-	padding: 10px;
+.game .gameThumb {
+    float: left;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
 }
-
 .game .gameTitle {
-	width: 620px;
-	padding: 10px 10px 10px 20px;
-	float: left;
-	margin: 0 0 10px;
-	background: rgba(255,255,255,0.2);
+    width: 620px;
+    padding: 10px 10px 10px 20px;
+    float: left;
+    margin: 0 0 10px;
+    background: rgba(255, 255, 255, 0.2);
 }
-
 .game .gameTitle h1 {
-	font-size: 18px;
+    font-size: 18px;
 }
-
 .game .gameContent {
-	width: 620px;
-	float: left;
-	margin-left: 10px;
-	padding: 5px 10px;
-	background: rgba(255,255,255,0.1);
-	font-size: 16px;
+    width: 620px;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
 }
-
+.contact {
+    margin-bottom: 10px;
+}
+.contact .thumb img {
+    display: block;
+    max-width: 200px;
+}
+.contact .thumb {
+    float: left;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    position: relative;
+}
+.contact .title {
+    width: 710px;
+    position: relative;
+    padding: 10px 10px 10px 20px;
+    float: left;
+    margin: 0 0 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+.contact .title h1 {
+    font-size: 18px;
+}
+.contact form .content {
+    width: 710px;
+    min-height: 100px;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    position: relative;
+    padding: 10px;
+}
+.contact form .content:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+.contact form .content .message {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    margin: 0px;
+    width: 96%;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0);
+}
+.contact form .content .message:focus {
+    outline: none;
+}
+.contact form .content.from {
+    margin-top: 10px;
+    min-height: 20px;
+    width: 610px;
+}
+.contact form .content.send {
+    width: 70px;
+    margin-top: 10px;
+    min-height: 20px;
+    position: relative;
+}
+.contact form .content.send .submit {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    line-height: 30px;
+}
+::-webkit-input-placeholder {
+    color: white;
+}
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+}
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: white;
+}
+:-ms-input-placeholder {
+    color: white;
+}
 #project .title {
-	position: relative;
-	margin-bottom: 10px;
-	background: rgba(255,255,255,0.2);
-	padding: 10px;
+    position: relative;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
 }
 #project iframe {
-	display: block;
-	margin: auto;
+    display: block;
+    margin: auto;
 }
-
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
-
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
-
 /* Unity */
 
-#unityPlayer embed{
+#unityPlayer embed {
     width: 960px;
     height: auto;
 }

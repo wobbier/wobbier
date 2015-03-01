@@ -24,9 +24,8 @@
                 <a href="{{url}}">
                     <img src="{{thumb}}" />
                 </a>
-                {{/external}}
-                {{^external}}
-                
+                {{/external}} {{^external}}
+
                 <a href="/game/{{slug}}">
                     <img src="{{thumb}}" />
                 </a>
@@ -37,8 +36,7 @@
                 <div class="block bottom right"></div>
                 {{#external}}
                 <h1><a href='{{url}}'>{{title}}</a> - <span class="date">{{date}}</span></h1>
-                {{/external}}
-                {{^external}}
+                {{/external}} {{^external}}
                 <h1>{{title}} - <span class="date">{{date}}</span></h1>
                 {{/external}}
             </div>
@@ -52,5 +50,43 @@
             <div class="clearfix"></div>
         </div>
         {{/games}}
+    </div>
+    <div class="contact">
+        <div class="thumb">
+            <div class="block top left"></div>
+            <div class="block bottom left"></div>
+            <div class="block bottom right"></div>
+            <a href="/game/{{slug}}">
+                <img src="/img/profile.png" />
+            </a>
+        </div>
+        <div class="title">
+            <div class="block top right"></div>
+            <div class="block bottom right"></div>
+            <h1>Send Me A Message!</h1>
+        </div>
+        <form action="/message" method="POST">
+            <div class="content">
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+                <div class="block top right"></div>
+                <div class="block bottom right"></div>
+                <textarea name="message" class="message" placeholder="Enter your message here..." required></textarea>
+            </div>
+            <div class="content from">
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+                <div class="block top right"></div>
+                <div class="block bottom right"></div>
+                <input type="email" name="email" class="message email" placeholder="Your E-Mail..." required />
+            </div>
+            <div class="content send">
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+                <div class="block top right"></div>
+                <div class="block bottom right"></div>
+                <input type="submit" name="submit" class="submit" value="Send!" />
+            </div>
+        </form>
     </div>
 </div>

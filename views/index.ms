@@ -98,7 +98,7 @@
     </div>
 </div>
 <script type="text/javascript">
-    /*$(".contact-form").submit(function(event) {
+    $(".contact-form").submit(function(event) {
         // Stop form from submitting normally
         event.preventDefault();
 
@@ -121,5 +121,5 @@
                 $(".notice").fadeIn();
             });
         });
-    });*/
+    });
 </script>

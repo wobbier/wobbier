@@ -63,7 +63,7 @@ app.post('/message', function(req, res) {
         from: 'noreply@wobbier.com',
         to: 'rastaninja77@live.com',
         subject: 'Message from wobbier.com',
-        html: '<html><body style="background-color: rgb(' + color + '); color:#fff;margin:0; padding:20px;"><img src="http://wobbier.com/img/wobbier-logo.png" style="margin:0 auto; text-align: center;" /><hr style="border-color: #fff;" />' + req.body.message + '<br /><br />From, <br />' + req.body.email + '</body></html>'
+        html: '<html><style type="text/css">a{color:#fff}</style><body style="background-color: rgb(' + color + '); color:#fff;margin:0; padding:20px;"><img src="http://wobbier.com/img/wobbier-logo.png" style="margin:0 auto; text-align: center;" /><hr style="border-color: #fff;" />' + req.body.message + '<br /><br />From, <br />' + req.body.email + '</body></html>'
     });
     res.write('Thank you for the message!<br> I\'ll try to get back to you soon :)');
     res.end();

@@ -424,6 +424,23 @@ p {
     color: white;
     line-height: 30px;
 }
+.contact .notice {
+    width: 710px;
+    height: 152px;
+    float: left;
+    margin-left: 10px;
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    position: relative;
+    padding: 10px;
+}
+.contact .notice .message {
+    margin-top: 24px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 45px;
+}
 ::-webkit-input-placeholder {
     color: white;
 }

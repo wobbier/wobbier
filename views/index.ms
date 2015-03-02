@@ -63,9 +63,9 @@
         <div class="title">
             <div class="block top right"></div>
             <div class="block bottom right"></div>
-            <h1>Send Me A Message!</h1>
+            <h1>Questions? Contact Me Here!</h1>
         </div>
-        <form action="/message" method="POST">
+        <form action="/message" method="POST" class="contact-form">
             <div class="content">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
@@ -88,5 +88,38 @@
                 <input type="submit" name="submit" class="submit" value="Send!" />
             </div>
         </form>
+        <div class="notice" style="display:none;">
+            <div class="block top left"></div>
+            <div class="block bottom left"></div>
+            <div class="block top right"></div>
+            <div class="block bottom right"></div>
+            <div class="message">Ayy lmao</div>
+        </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(".contact-form").submit(function(event) {
+        // Stop form from submitting normally
+        event.preventDefault();
+
+        // Get some values from elements on the page:
+        var $form = $(this),
+            email = $form.find("input[name='email']").val(),
+            message = $form.find("textarea[name='message']").val(),
+            url = $form.attr("action");
+
+        // Send the data using post
+        var posting = $.post(url, {
+            email: email,
+            message: message,
+        });
+
+        // Put the results in a div
+        posting.done(function(data) {
+            $(".contact-form").fadeOut(500, function() {
+                $(".notice .message").empty().append(data);
+                $(".notice").fadeIn();
+            });
+        });
+    });
+</script>

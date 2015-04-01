@@ -8,11 +8,6 @@
         <p>My name is Mitchell Andrews and I'm a <strong>{{age}}</strong> year old game programmer from <strong>Toronto</strong>.</p>
         <p>I program primarily in <strong>C++</strong>, <strong>C#</strong>, and <strong>Node.js</strong>.</p>
     </div>
-</div>
-<div id="gamesHeader">
-    <img src="/img/portfolio.png"></img>
-</div>
-<div id="content">
     <div class="contact">
         <div class="thumb">
             <div class="block top left"></div>
@@ -57,7 +52,13 @@
             <div class="block bottom right"></div>
             <div class="message">Ayy lmao</div>
         </div>
+        <div class="clearfix"></div>
     </div>
+</div>
+<div id="gamesHeader">
+    <img src="/img/portfolio.png"></img>
+</div>
+<div id="content">
     <div class="games">
         {{#games}}
         <div class="game">

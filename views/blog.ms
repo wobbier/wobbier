@@ -6,7 +6,9 @@
 						<div class="block top left"></div>
 						<div class="block bottom left"></div>
 						<div class="block bottom right"></div>
-						<img src="{{image}}">
+						<a href="{{url}}">
+							<img src="{{image}}" />
+						</a>
 					</div>
 					<div class="postTitle">
 						<div class="block top right"></div>

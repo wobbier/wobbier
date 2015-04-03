@@ -6,6 +6,7 @@ var PostSchema = new mongoose.Schema({
     title: String,
     image: String,
     content: String,
+    url: String,
     date: String
 }, {
     collection: "Posts"

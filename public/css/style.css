@@ -474,6 +474,9 @@ a:hover {
 
 .description{
     position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-top: 10px;
 }
 /* Unity */
 

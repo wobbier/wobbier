@@ -8,6 +8,7 @@ var GameSchema = new mongoose.Schema({
     slug: String,
     isUnity: Boolean,
     isFlash: Boolean,
+    isVideo: Boolean,
     external: Boolean,
     url: String,
     customCover: Boolean,

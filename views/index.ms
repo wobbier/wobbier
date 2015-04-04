@@ -61,6 +61,7 @@
 <div id="content">
     <div class="games">
         {{#games}}
+        {{^hidden}}
         <div class="game">
             <div class="gameThumb">
                 <div class="block top left"></div>
@@ -95,6 +96,7 @@
             </div>
             <div class="clearfix"></div>
         </div>
+        {{/hidden}}
         {{/games}}
     </div>
 </div>

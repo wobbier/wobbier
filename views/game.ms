@@ -76,8 +76,8 @@
 {{/isFlash}}
 {{#isVideo}}
 <div style="text-align: center; margin: auto">
-	<object type="application/x-shockwave-flash" style="width:960px; height:540px;" data="http://www.youtube.com/v/{{url}}?color2=FBE9EC&amp;hd=1&amp;showsearch=0&amp;version=3&amp;modestbranding=1&amp;fs=1">
-        <param name="movie" value="http://www.youtube.com/v/{{url}}?color2=FBE9EC&amp;hd=1&amp;showsearch=0&amp;version=3&amp;modestbranding=1&amp;fs=1" />
+	<object type="application/x-shockwave-flash" style="width:960px; height:540px;" data="http://www.youtube.com/v/{{url}}?color2=FBE9EC&amp;hd=1&amp;showsearch=0&amp;version=3&amp;modestbranding=1&amp;fs=1&amp;autoplay=1">
+        <param name="movie" value="http://www.youtube.com/v/{{url}}?color2=FBE9EC&amp;hd=1&amp;showsearch=0&amp;version=3&amp;modestbranding=1&amp;fs=1&amp;autoplay=1" />
         <param name="allowFullScreen" value="true" />
         <param name="allowscriptaccess" value="always" />
     </object>

@@ -478,6 +478,46 @@ a:hover {
     padding: 10px;
     margin-top: 10px;
 }
+.box {
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+}
+.block2 {
+    position: relative;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+}
+
+.account{
+	padding: 0;
+	margin: 10px 0 0 0;
+}
+
+.account .section{
+	padding: 0;
+	width: 49.5%;
+	float: left;
+	margin-right: 1%;
+	text-align: center;
+	height: 150px;
+	line-height: 200px;
+}
+
+.account .section.last{
+	margin-right: 0;
+}
+.account .section:hover{
+    background: rgba(255, 255, 255, 0.1);
+}
+.account .section a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
 /* Unity */
 
 #unityPlayer embed {

@@ -8,6 +8,23 @@
         <p>My name is Mitchell Andrews and I'm a <strong>{{age}}</strong> year old game programmer from <strong>Toronto</strong>.</p>
         <p>I program primarily in <strong>C++</strong>, <strong>C#</strong>, and <strong>Node.js</strong>.</p>
     </div>
+        <div class="account">
+    	<div class="box section">
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+                <div class="block top right"></div>
+                <div class="block bottom right"></div>
+                <a href="https://github.com/wobbier"><img src="/img/GitHub-Mark.png" height="64px"></a>
+            </div>
+    	<div class="box section last">
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+                <div class="block top right"></div>
+                <div class="block bottom right"></div>
+                <a href="https://ca.linkedin.com/in/mitchellandrews"><img src="/img/linkedin.png"></a>
+                </div>
+            <div class="clearfix"></div>
+    </div>
 </div>
 <div id="gamesHeader">
     <img src="/img/portfolio.png"></img>
@@ -53,23 +70,7 @@
         {{/hidden}}
         {{/games}}
     </div>
-    <div class="account">
-    	<div class="box section">
-                <div class="block top left"></div>
-                <div class="block bottom left"></div>
-                <div class="block top right"></div>
-                <div class="block bottom right"></div>
-                <a href="https://github.com/wobbier"><img src="/img/GitHub-Mark.png" height="64px"></a>
-            </div>
-    	<div class="box section last">
-                <div class="block top left"></div>
-                <div class="block bottom left"></div>
-                <div class="block top right"></div>
-                <div class="block bottom right"></div>
-                <a href="https://ca.linkedin.com/in/mitchellandrews"><img src="/img/linkedin.png"></a>
-                </div>
-            <div class="clearfix"></div>
-    </div>
+
     <div class="contact">
         <div class="thumb">
             <div class="block top left"></div>

@@ -22,6 +22,11 @@
             <div id="nav">
                 <ul>
                     <li class="right">
+                        <a href="https://dl.dropboxusercontent.com/u/14759830/Portfolio/Mitchell-Andrews-Resume.docx">
+                            <img src="/img/resume.png">
+                        </a>
+                    </li>
+                    <li>
                         <a href="/blog">
                             <img src="/img/blog.png">
                         </a>

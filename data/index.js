@@ -11,6 +11,8 @@ var GameSchema = new mongoose.Schema({
     isVideo: Boolean,
     hidden: Boolean,
     external: Boolean,
+    tags: Array,
+    downloads: Object,
     url: String,
     customCover: Boolean,
     gameFile: String,

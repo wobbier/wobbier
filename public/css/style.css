@@ -288,6 +288,11 @@ p {
     padding: 10px;
     width: 455px;
 }
+.post .postImage a{
+  display: block;
+  min-height: 120px;
+  min-width: 455px;
+}
 .post .postTitle {
     width: 455px;
     padding: 10px 10px 10px 20px;
@@ -327,6 +332,11 @@ p {
     float: left;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
+}
+.game .gameThumb a {
+  display: block;
+  min-height: 120px;
+  min-width: 290px;
 }
 .game .gameTitle {
     width: 620px;
@@ -517,6 +527,31 @@ a:hover {
 	left: 0;
 	right: 0;
 	bottom: 0;
+}
+
+.tags .tag {
+    float: right;
+    padding: 10px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+    margin-left: 10px;
+}
+.tags {
+    margin: 10px 0 10px 0;
+}
+.tags a{
+    display: block;
+    float: left;
+    line-height: 25px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    position: relative;
+    background: rgba(255, 255, 255, 0.2);
+}
+.tags a img {
+    float: left;
+    height: 25px;
+    margin-right: 5px;
 }
 /* Unity */
 

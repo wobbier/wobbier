@@ -22,6 +22,7 @@
 				params: { enableDebugging:"0" }
 				
 			};
+			config.params["disableContextMenu"] = true;
 			var u = new UnityObject2(config);
 			
 			jQuery(function() {
@@ -83,6 +84,24 @@
     </object>
 </div>
 {{/isVideo}}
+<div class="tags">
+{{#downloads}}
+<a href="{{url}}" class="{{type}}">
+<div class="block top left"></div>
+<div class="block bottom left"></div>
+<div class="block top right"></div>
+<div class="block bottom right"></div><img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
+{{/downloads}}
+{{#tags}}
+	<div class="tag">
+<div class="block top left"></div>
+<div class="block bottom left"></div>
+<div class="block top right"></div>
+<div class="block bottom right"></div>{{tag}}</div>
+{{/tags}}
+<div class="clearfix"></div>
+</div>
+
 <div class="description">
 <div class="block top left"></div>
 <div class="block bottom left"></div>

@@ -1,4 +1,11 @@
 </div>
+{{#customCover}}
+<style type="text/css">
+	.block{
+		background: rgba(255, 255, 255, 0.1) !important;
+	}
+</style>
+{{/customCover}}
 {{#games}}
 <div id="gameTitle" style="text-align:center;">
 	<img src="https://dl.dropboxusercontent.com/u/14759830/Portfolio/{{slug}}-title.png" />
@@ -84,6 +91,18 @@
     </object>
 </div>
 {{/isVideo}}
+{{#slider}}
+<div id="slider">
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+{{#images}}
+    <li style="background: url('{{image}}'); background-size: cover;"></li>
+{{/images}}
+  </ul>  
+</div>
+<script src="/js/slider.js"></script>
+{{/slider}}
 <div class="tags">
 {{#downloads}}
 <a href="{{url}}" class="{{type}}">

@@ -61,11 +61,7 @@
         {{/thumb}}
                 <div class="block top right"></div>
                 <div class="block bottom right"></div>
-                {{#external}}
-                <h1><a href='{{url}}'>{{title}}</a> - <span class="date">{{date}}</span></h1>
-                {{/external}} {{^external}}
-                <h1>{{title}} - <span class="date">{{date}}</span></h1>
-                {{/external}}
+                <h1><a href='{{#external}}{{url}}{{/external}}{{^external}}/game/{{slug}}{{/external}}'>{{title}}</a> - <span class="date">{{date}}</span></h1>
             </div>
             <div class="gameContent {{^thumb}}noThumb{{/thumb}}">
                 <div class="block top left"></div>

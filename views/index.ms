@@ -37,6 +37,7 @@
         {{#games}}
         {{^hidden}}
         <div class="game">
+        {{#thumb}}
             <div class="gameThumb">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
@@ -52,7 +53,12 @@
                 </a>
                 {{/external}}
             </div>
-            <div class="gameTitle">
+            {{/thumb}}
+            <div class="gameTitle {{^thumb}}noThumb{{/thumb}}">
+        {{^thumb}}
+                <div class="block top left"></div>
+                <div class="block bottom left"></div>
+        {{/thumb}}
                 <div class="block top right"></div>
                 <div class="block bottom right"></div>
                 {{#external}}
@@ -61,7 +67,7 @@
                 <h1>{{title}} - <span class="date">{{date}}</span></h1>
                 {{/external}}
             </div>
-            <div class="gameContent">
+            <div class="gameContent {{^thumb}}noThumb{{/thumb}}">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
                 <div class="block top right"></div>

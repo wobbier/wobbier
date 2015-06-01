@@ -345,6 +345,11 @@ p {
     margin: 0 0 10px;
     background: rgba(255, 255, 255, 0.2);
 }
+.noThumb {
+    width: auto !important;
+    float: none !important;
+    margin-left: 0px !important;
+}
 .game .gameTitle h1 {
     font-size: 18px;
 }

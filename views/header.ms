@@ -17,7 +17,7 @@
     <div class="wrapper">
         <div id="header">
             <div id="logo">
-                <img src="/img/wobbier-logo.png">
+                <a href="/"><img src="/img/wobbier-logo.png"></a>
             </div>
             <div id="nav">
                 <ul>

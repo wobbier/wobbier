@@ -9,6 +9,7 @@ var GameSchema = new mongoose.Schema({
     isUnity: Boolean,
     isFlash: Boolean,
     isVideo: Boolean,
+    isFeatured: Boolean,
     slider: Boolean,
     hidden: Boolean,
     external: Boolean,
@@ -36,7 +37,7 @@ exports.loadData = function (cb) {
         } else {
             console.log('Succeeded connected to: ' + uristring);
 
-            Game.find({}).sort("-date").exec(function (err, dbGames) {
+            Game.find({}).sort([['isFeatured', -1], ['date', -1]]).exec(function (err, dbGames) {
                 for (var i = 0; i < dbGames.length; i++) {
                     dbGames[i].date = moment(dbGames[i].date).format("MMMM DD, YYYY");
                 }

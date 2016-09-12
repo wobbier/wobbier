@@ -8,7 +8,6 @@
         <p>My name is Mitchell Andrews and I'm a <strong>{{age}}</strong> year old game programmer from <strong>Toronto</strong>.</p>
         <p>I program primarily in <strong>C++</strong>, <strong>C#</strong>, and <strong>Node.js</strong> using either OS X, Windows, or Linux.</p>
         <p>I primarily use C++, Unity, and Unreal Engine 4 for game development.</p>
-        <p>I also have experience in 3D (rigging, animating, unwrapping, etc...), editing audio, and much more!</p>
         <p>Contact me <a href="#contact">at the bottom</a> if you have any questions!</p>
     </div>
         <div class="account">

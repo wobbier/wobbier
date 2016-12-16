@@ -1,6 +1,6 @@
 var mongoose = require("mongoose");
 var moment = require('moment');
-var uristring = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://dev:alpine@oceanic.mongohq.com:10008/app22656752'; //'mongodb://localhost/app22656752';
+var uristring = process.env.MONGOLAB_URI || 'mongodb://site_read_only:alpine@ds133368.mlab.com:33368/heroku_0dhqbbgd';
 var age = getAge(new Date(1994, 01, 03));
 var GameSchema = new mongoose.Schema({
     _id: String,

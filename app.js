@@ -84,7 +84,12 @@ app.get('/css/:id.css', function(req, res) {
     res.writeHeader(200, {
         "Content-Type": "text/css"
     });
-    res.write("body {background: url('https://dl.dropboxusercontent.com/u/14759830/Portfolio/" + id + "-cover.png'); background-size: cover; background-repeat: no-repeat;}");
+    res.write("\
+    body {\
+        background: url('https://dl.dropboxusercontent.com/u/14759830/Portfolio/" + id + "-cover.png');\
+        background-size: cover;\
+        background-repeat: no-repeat;\
+    }");
     res.end();
 });
 

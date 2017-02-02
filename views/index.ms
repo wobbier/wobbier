@@ -5,7 +5,7 @@
         <div class="block bottom left"></div>
         <div class="block top right"></div>
         <div class="block bottom right"></div>
-        <p>My name is Mitchell Andrews and I'm a <strong>{{age}}</strong> year old game programmer from <strong>Toronto</strong>.</p>
+        <p>My name is Mitch Andrews and I'm a game programmer from <strong>Toronto</strong>, Canada.</p>
         <p>I program primarily in <strong>C++</strong>, <strong>C#</strong>, and <strong>Node.js</strong> using either OS X, Windows, or Linux.</p>
         <p>I primarily use C++, Unity, and Unreal Engine 4 for game development.</p>
         <p>Contact me <a href="#contact">at the bottom</a> if you have any questions!</p>

@@ -4,6 +4,7 @@ var uristring = process.env.MONGOLAB_URI || 'mongodb://site_read_only:alpine@ds1
 var PostSchema = new mongoose.Schema({
     _id: String,
     title: String,
+    slug: String,
     image: String,
     content: String,
     url: String,
@@ -33,5 +34,19 @@ exports.loadPosts = function (cb) {
                 });
             });
         }
+    });
+}
+
+exports.loadPost = function(id, cb) {
+    mongoose.connect(uristring, function(err, res) {
+        Post.find({'slug': id}).exec(function(err, posts) {
+            posts[0].date = moment(posts[0].date).format("MMMM DD, YYYY");
+            mongoose.connection.close();
+            cb({
+                title: posts[0].title + ' | Mitch Andrews',
+                post: posts,
+                slug: id
+            });
+        });
     });
 }

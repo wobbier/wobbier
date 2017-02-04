@@ -51,6 +51,16 @@ app.get('/blog', function(req, res) {
     });
 });
 
+app.get('/blog/:id', function(req, res) {
+    var id = req.params.id;
+    var blog = require(__dirname + '/data/blog.js');
+    blog.loadPost(id, function(data) {
+        layout.render(res, 'post.ms', data, function(stream) {
+            stream.pipe(res);
+        });
+    });
+});
+
 app.post('/message', function(req, res) {
     var nodemailer = require('nodemailer');
 

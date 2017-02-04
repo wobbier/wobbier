@@ -244,8 +244,12 @@ li.right {
 }
 .home,
 .col,
+.blogImage,
+.blogTitle,
+.blogContent,
 .postImage,
 .postTitle,
+.postDate,
 .postContent,
 .gameThumb,
 .gameTitle,
@@ -274,36 +278,36 @@ p {
 }
 /* BLOG */
 
-.post {
+.blog {
     margin-bottom: 10px;
 }
-.post .postImage img {
+.blog .blogImage img {
     width: 455px;
     height: auto;
     display: block;
 }
-.post .postImage {
+.blog .blogImage {
     float: left;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     width: 455px;
 }
-.post .postImage a{
+.blog .blogImage a{
   display: block;
   min-height: 120px;
   min-width: 455px;
 }
-.post .postTitle {
+.blog .blogTitle {
     width: 455px;
     padding: 10px 10px 10px 20px;
     float: left;
     margin: 0 0 10px;
     background: rgba(255, 255, 255, 0.2);
 }
-.post .postTitle h1 {
+.blog .blogTitle h1 {
     font-size: 18px;
 }
-.post .postContent {
+.blog .blogContent {
     width: 455px;
     float: left;
     margin-left: 10px;
@@ -311,10 +315,53 @@ p {
     background: rgba(255, 255, 255, 0.1);
     font-size: 16px;
 }
-.post .postContent a,
+.blog .blogContent a,
 .game .gameContent a {
     text-decoration: underline;
 }
+
+/* POST */
+
+.post {
+    text-align: center;
+}
+
+.post .postTitle {
+    display: inline-block;
+    font-size: 40px;
+    text-align: center;
+}
+
+.post .postDate {
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+}
+.post .postImage {
+    display: inline-block;
+    text-align: center;
+}
+
+.post img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.post .postTitle, .post .postDate {
+    padding: 10px 20px;
+    margin: 0 0 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.post .postContent {
+    padding: 10px 20px;
+    margin: 10px 0;
+    line-height: 1.5em;
+    background: rgba(255, 255, 255, 0.2);
+    text-align: left;
+}
+
 /* GAMES */
 
 #gamesHeader {

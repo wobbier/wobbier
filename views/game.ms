@@ -76,12 +76,8 @@
 					<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
 				</a>
 			</div>
-		</div>{{/isUnity}}{{#isFlash}}
-	<object type="application/x-shockwave-flash" data="{{gameFile}}" width="960px" height="540px">
-		<param name="movie" value="{{gameFile}}" />
-		<param name="quality" value="high" />
-	</object>
-{{/isFlash}}
+		</div>
+{{/isUnity}}
 {{#isVideo}}
 <div id ="player" style="text-align: center; margin: auto">
 </div>
@@ -101,30 +97,10 @@
           height: '540',
           width: '960',
           videoId: '{{url}}',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
+{{#selectedTime}}
+					playerVars: { 'start': {{startTime}} , 'end': {{endTime}} }
+{{/selectedTime}}
         });
-      }
-
-      // 4. The API will call this function when the video player is ready.
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      // 5. The API calls this function when the player's state changes.
-      //    The function indicates that when playing a video (state=1),
-      //    the player should play for six seconds and then stop.
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          stopVideo();
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
       }
     </script>
 {{/isVideo}}

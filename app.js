@@ -89,20 +89,6 @@ app.get('/css/theme.css', function(req, res) {
     res.end();
 });
 
-app.get('/css/:id.css', function(req, res) {
-    var id = req.params.id;
-    res.writeHeader(200, {
-        "Content-Type": "text/css"
-    });
-    res.write("\
-    body {\
-        background: url('https://dl.dropboxusercontent.com/u/14759830/Portfolio/" + id + "-cover.png');\
-        background-size: cover;\
-        background-repeat: no-repeat;\
-    }");
-    res.end();
-});
-
 var port = Number(process.env.PORT || 9292);
 app.listen(port, function() {
     console.log("Listening on " + port);

@@ -4,11 +4,12 @@
 	.block{
 		background: rgba(255, 255, 255, 0.1) !important;
 	}
+	{{backgroundStyle}}
 </style>
 {{/customCover}}
 {{#games}}
 <div id="gameTitle" style="text-align:center;">
-	<img src="https://dl.dropboxusercontent.com/u/14759830/Portfolio/{{slug}}-title.png" />
+	<img src="{{titleImage}}" />
 </div>
 <div id="content">
 {{#isUnity}}

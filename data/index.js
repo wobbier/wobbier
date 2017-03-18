@@ -1,7 +1,6 @@
 var mongoose = require("mongoose");
 var moment = require('moment');
 var uristring = process.env.MONGOLAB_URI || 'mongodb://site_read_only:alpine@ds133368.mlab.com:33368/heroku_0dhqbbgd';
-var age = getAge(new Date(1994, 01, 03));
 var GameSchema = new mongoose.Schema({
     _id: String,
     title: String,
@@ -23,11 +22,12 @@ var GameSchema = new mongoose.Schema({
     gameFile: String,
     thumb: String,
     background: String,
+    titleImage: String,
     date: String,
     description: String
 }, {
-    collection: "Games"
-});
+        collection: "Games"
+    });
 
 mongoose.model('Game', GameSchema);
 var Game = mongoose.model('Game');
@@ -46,7 +46,6 @@ exports.loadData = function (cb) {
                 mongoose.connection.close();
                 cb({
                     title: "Mitch Andrews | Game Developer",
-                    age: age,
                     games: dbGames
                 });
             });
@@ -69,22 +68,19 @@ exports.getGame = function (slug, cb) {
                 }
                 console.log(dbGames);
                 mongoose.connection.close();
+                var background = "body {\
+                                        background: url('" + dbGames[0].background + "');\
+                                        background-size: cover;\
+                                        background-repeat: no-repeat;\
+                                    }";
                 cb({
                     title: "Mitch Andrews | Game Developer",
                     games: dbGames,
+                    backgroundStyle: background,
                     customCover: dbGames[0].customCover,
                     slug: slug
                 });
             });
         }
     });
-}
-
-function getAge(birthdate, callback) {
-    var date = new Date();
-    var age = date.getFullYear() - birthdate.getFullYear();
-    if (birthdate.getMonth() > date.getMonth() || (birthdate.getMonth() >= date.getMonth() && birthdate.getDay() > date.getDay())) {
-        age -= 1;
-    }
-    return age;
 }

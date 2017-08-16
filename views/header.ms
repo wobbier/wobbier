@@ -18,24 +18,5 @@
             <div id="logo">
                 <a href="/"><img src="/img/wobbier-logo.png"></a>
             </div>
-            <div id="nav">
-                <ul>
-                    <li class="right">
-                        <a href="https://dl.dropboxusercontent.com/u/14759830/Portfolio/Mitchell-Andrews-Resume.pdf">
-                            <img src="/img/resume.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">
-                            <img src="/img/blog.png">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="/img/home.png">
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </div>
         <div class="clearfix">

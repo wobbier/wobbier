@@ -1,86 +1,39 @@
 var mongoose = require("mongoose");
 var moment = require('moment');
-var uristring = process.env.MONGOLAB_URI || 'mongodb://site_read_only:alpine@ds133368.mlab.com:33368/heroku_0dhqbbgd';
-var GameSchema = new mongoose.Schema({
-    _id: String,
-    title: String,
-    slug: String,
-    isUnity: Boolean,
-    isVideo: Boolean,
-    selectedTime: Boolean,
-    startTime: Number,
-    endTime: Number,
-    isFeatured: Boolean,
-    slider: Boolean,
-    hidden: Boolean,
-    external: Boolean,
-    images: Array,
-    tags: Array,
-    downloads: Object,
-    url: String,
-    customCover: Boolean,
-    gameFile: String,
-    thumb: String,
-    background: String,
-    titleImage: String,
-    date: String,
-    description: String
-}, {
-        collection: "Games"
-    });
 
-mongoose.model('Game', GameSchema);
-var Game = mongoose.model('Game');
+var Game = mongoose.model("Game");
 
 exports.loadData = function (cb) {
-    mongoose.connect(uristring, function (err, res) {
-        if (err) {
-            console.log('ERROR connecting to: ' + uristring + '. ' + err);
-        } else {
-            console.log('Succeeded connected to: ' + uristring);
-
-            Game.find({}).sort([['isFeatured', -1], ['date', -1]]).exec(function (err, dbGames) {
-                for (var i = 0; i < dbGames.length; i++) {
-                    dbGames[i].date = moment(dbGames[i].date).format("MMMM DD, YYYY");
-                }
-                mongoose.connection.close();
-                cb({
-                    title: "Mitch Andrews | Game Developer",
-                    games: dbGames
-                });
-            });
+    var games = Game.find({}).sort([['isFeatured', -1], ['date', -1]]).exec(function (err, dbGames) {
+        for (var i = 0; i < dbGames.length; i++) {
+            dbGames[i].date = moment(dbGames[i].date).format("MMMM DD, YYYY");
         }
+        cb({
+            title: "Mitch Andrews | Game Developer",
+            games: dbGames
+        });
     });
 }
 
 exports.getGame = function (slug, cb) {
-    mongoose.connect(uristring, function (err, res) {
-        if (err) {
-            console.log('ERROR connecting to: ' + uristring + '. ' + err);
-        } else {
-            console.log('Succeeded connected to: ' + uristring);
-
-            Game.find({
-                'slug': slug
-            }).exec(function (err, dbGames) {
-                for (var i = 0; i < dbGames.length; i++) {
-                    dbGames[i].date = moment(dbGames[i].date).format("MMMM DD, YYYY");
-                }
-                console.log(dbGames);
-                mongoose.connection.close();
-                var background = "body {\
+    Game.find({
+        'slug': slug
+    }).exec(function (err, dbGames) {
+        for (var i = 0; i < dbGames.length; i++) {
+            dbGames[i].date = moment(dbGames[i].date).format("MMMM DD, YYYY");
+        }
+        console.log(dbGames);
+        var background = "body {\
                                         background: url('" + dbGames[0].background + "');\
                                         background-size: cover;\
                                         background-repeat: no-repeat;\
                                     }";
-                cb({
-                    title: "Mitch Andrews | Game Developer",
-                    games: dbGames,
-                    backgroundStyle: background,
-                    customCover: dbGames[0].customCover,
-                    slug: slug
-                });
-            });
-        }
+        cb({
+            title: "Mitch Andrews | Game Developer",
+            games: dbGames,
+            backgroundStyle: background,
+            customCover: dbGames[0].customCover,
+            slug: slug
+        });
     });
 }

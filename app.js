@@ -1,11 +1,12 @@
 // web.js
-var express = require("express"),
-    logfmt = require("logfmt"),
-    mu = require('mu2'),
-    util = require('util'),
-    path = require('path'),
-    layout = require(__dirname + '/core/layout.js'),
-    app = express();
+var express = require("express");
+var logfmt = require("logfmt");
+var mu = require('mu2');
+var util = require('util');
+var path = require('path');
+var layout = require(__dirname + '/core/layout.js');
+var database = require(__dirname + '/core/database.js');
+var app = express();
 
 //add some standard express middleware
 app.configure(function() {

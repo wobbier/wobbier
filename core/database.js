@@ -3,7 +3,7 @@ mongoose.Promise = global.Promise;
 
 var dbURI = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://site_read_only:alpine@ds133368.mlab.com:33368/heroku_0dhqbbgd';
 
-mongoose.connect(dbURI, { useMongoClient: true });
+mongoose.connect(dbURI);
 
 // CONNECTION EVENTS
 mongoose.connection.on('connected', () => console.log('Mongoose default connection open to ' + dbURI));

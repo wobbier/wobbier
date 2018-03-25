@@ -16,7 +16,7 @@
 			<h1 class="gameTitle">{{title}}</h1>
 			<h2 class="gameDate">{{date}}</h2>
 {{#company}}
-<a href="{{companyURL}}" class="company-url">{{company}}</a>
+<a href="{{companyURL}}" class="company-url"><h3>{{company}}</h3></a>
 {{/company}}
 		</div>
 	</div>
@@ -24,14 +24,14 @@
 
 <div class="tags">
 {{#downloads}}
-<a href="{{url}}" class="{{type}}">
+<a href="{{url}}" class="{{type}} theme-secondary">
 <div class="block top left"></div>
 <div class="block bottom left"></div>
 <div class="block top right"></div>
 <div class="block bottom right"></div><img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
 {{/downloads}}
 {{#tags}}
-	<div class="tag">
+	<div class="tag theme-secondary">
 <div class="block top left"></div>
 <div class="block bottom left"></div>
 <div class="block top right"></div>
@@ -40,7 +40,7 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="description">
+<div class="description theme-secondary">
 <div class="block top left"></div>
 <div class="block bottom left"></div>
 <div class="block top right"></div>

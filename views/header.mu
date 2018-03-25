@@ -13,9 +13,14 @@
 </head>
 
 <body class="theme-background">
-        <div id="header">
-            <div id="logo">
-                <a href="/"><img src="/img/wobbier-logo.png"></a>
+        <div id="header" class="theme-primary">
+            <div class="wrapper">
+                <div id="logo">
+                </div>
+                <ul id="nav">
+                    <li><a href="/">Mitch Andrews</a></li>
+                    <li><a href="/blog">Blog</a></li>
+                </ul>
             </div>
         </div>
         <div class="clearfix">

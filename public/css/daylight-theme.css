@@ -1,0 +1,44 @@
+body{
+    text-shadow: 0 1px 1px rgba(255,255,255,0.4);
+    color: #595959;
+}
+.block {
+    background: #FFFFFF;
+}
+
+.theme-background {
+    background: #FFFFFF;
+}
+
+.theme-primary {
+    background: #F0F0F0;
+}
+
+.theme-secondary {
+    background: #D5D5D5;
+}
+
+.theme-accent {
+    
+}
+.box.section.theme-primary img
+{
+    filter: invert(100%);
+}
+
+#header{
+    background: #212121;
+}
+
+a {
+    color: #212121;
+}
+
+#nav a
+{
+    color: white;
+}
+
+::-moz-placeholder, .submit {
+    color: #595959 !important;
+}

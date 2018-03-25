@@ -23,10 +23,8 @@ exports.getGame = function (slug, cb) {
             dbGames[i].date = moment(dbGames[i].date, "YYYY-MM-DD").format("MMMM DD, YYYY");
         }
         console.log(dbGames);
-        var background = "#gameHeader {\
+        var background = "#gameHeader .background {\
                                         background: url('" + dbGames[0].background + "');\
-                                        background-size: cover;\
-                                        background-repeat: no-repeat;\
                                     }";
         cb({
             title: "Mitch Andrews | Game Developer",

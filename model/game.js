@@ -3,7 +3,8 @@ var mongoose = require("mongoose");
 var GameSchema = new mongoose.Schema({
     title: String,
     slug: String,
-    isUnity: Boolean,
+    company: String,
+    companyURL: String,
     isVideo: Boolean,
     selectedTime: Boolean,
     startTime: Number,
@@ -22,7 +23,8 @@ var GameSchema = new mongoose.Schema({
     background: String,
     titleImage: String,
     date: String,
-    description: String
+    description: String,
+    devNotes: String
 }, {
         collection: "Games"
     });

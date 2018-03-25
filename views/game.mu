@@ -6,54 +6,22 @@
 {{/customCover}}
 {{#games}}
 <div id="gameHeader">
-	<div id="gameTitle" style="text-align:center;">
+	<div class="background"></div>
+</div>
+	<div id="gameTitle">
 		<div class="gameImage theme-primary">
 			<img src="{{titleImage}}" />
 		</div>
-		<div class="gameTitleText">
-		{{title}}
+		<div class="bannerText">
+			<h1 class="gameTitle">{{title}}</h1>
+			<h2 class="gameDate">{{date}}</h2>
+{{#company}}
+<a href="{{companyURL}}" class="company-url">{{company}}</a>
+{{/company}}
 		</div>
 	</div>
-</div>
 <div id="content">
-{{#isVideo}}
-<div id ="player" style="text-align: center; margin: auto">
-</div>
-   <script>
-      // 2. This code loads the IFrame Player API code asynchronously.
-      var tag = document.createElement('script');
 
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      // 3. This function creates an <iframe> (and YouTube player)
-      //    after the API code downloads.
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '540',
-          width: '960',
-          videoId: '{{url}}',
-{{#selectedTime}}
-					playerVars: { 'start': {{startTime}} , 'end': {{endTime}} }
-{{/selectedTime}}
-        });
-      }
-    </script>
-{{/isVideo}}
-{{#slider}}
-<div id="slider">
-  <a href="#" class="control_next">></a>
-  <a href="#" class="control_prev"><</a>
-  <ul>
-{{#images}}
-    <li style="background: url('{{image}}'); background-size: cover;"></li>
-{{/images}}
-  </ul>  
-</div>
-<script src="/js/slider.js"></script>
-{{/slider}}
 <div class="tags">
 {{#downloads}}
 <a href="{{url}}" class="{{type}}">
@@ -78,6 +46,46 @@
 <div class="block top right"></div>
 <div class="block bottom right"></div>
 {{{description}}}
+{{{devNotes}}}
 </div>
+
+{{#isVideo}}
+<div id ="player" style="text-align: center; margin: auto">
+</div>
+   <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '619',
+          width: '1100',
+          videoId: '{{url}}',
+{{#selectedTime}}
+					playerVars: { 'start': {{startTime}} , 'end': {{endTime}} }
+{{/selectedTime}}
+        });
+      }
+    </script>
+{{/isVideo}}
+{{#slider}}
+<div id="slider">
+  <a href="#" class="control_next">></a>
+  <a href="#" class="control_prev"><</a>
+  <ul>
+{{#images}}
+    <li style="background: url('{{image}}'); background-size: cover;"></li>
+{{/images}}
+  </ul>  
+</div>
+<script src="/js/slider.js"></script>
+{{/slider}}
 </div>
 {{/games}}

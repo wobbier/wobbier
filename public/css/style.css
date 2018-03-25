@@ -70,13 +70,13 @@ body {
 }
 
 .wrapper {
-    width: 960px;
+    width: 1100px;
     margin: 0 auto;
     position: relative;
 }
 
 #header {
-    width: 960px;
+    width: 1100px;
     display: block;
     margin: 30px auto;
     position: relative;
@@ -168,26 +168,79 @@ li.right {
 }
 
 #content {
-    width: 960px;
+    width: 1100px;
     margin: 0 auto 10px auto;
 }
 
+#gameHeader{
+    overflow: hidden;
+    float: left;
+    height: 450px;
+    width: 100%;
+    background-image: linear-gradient(transparent 0%, transparent 65%, rgba(0,0,0,0.25) 100%);
+}
+
+#gameHeader .background{
+    filter: blur(10px);
+    height: 450px;
+    float: none;
+    background-position: center center;
+    transform: scale(1.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #gameTitle {
-    width: 960px;
-    text-align: center;
+    width: 1100px;
     margin: 0 auto 20px auto;
     height: 450px;
     position: relative;
 }
 
 #gameTitle .gameImage {
-    width: 200px;
+    width: 265px;
     height: auto;
     float: left;
-    bottom: 0;
+    bottom: -60px;
     position: absolute;
 }
+#gameTitle .gameImage img {
+    width: inherit;
+}
+.bannerText {
+    float: left;
+    position: absolute;
+    bottom: 0;
+    left: 280px;
+    padding-bottom: 25px;
+}
 
+.bannerText .gameTitle {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+}
+
+.bannerText .gameDate {
+    font-size: 25px;
+    opacity: 0.8;
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.bannerText .company-url {
+    font-size: 18px;
+    opacity: 0.8;
+    font-style: italic;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.bannerText .company-url:hover {
+    text-decoration: underline red;
+}
 .home, .col, .blogImage, .blogTitle, .blogContent, .postImage, .postTitle, .postDate, .postContent, .gameThumb, .gameTitle, .gameContent, .tweet {
     position: relative;
 }
@@ -511,7 +564,9 @@ a:hover {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
-    margin-top: 10px;
+    margin-left: 20px;
+    float: left;
+    width: 795px;
 }
 
 .box {
@@ -559,23 +614,23 @@ a:hover {
 }
 
 .tags .tag {
-    float: right;
     padding: 10px;
     position: relative;
     background: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .tags {
-    margin: 10px 0 10px 0;
+    margin: 60px 0 10px 0;
+    width: 265px;
+    float: left;
 }
 
 .tags a {
     display: block;
-    float: left;
     line-height: 25px;
     padding: 5px 10px;
-    margin-right: 10px;
+    margin-bottom: 10px;
     position: relative;
     background: rgba(255, 255, 255, 0.2);
 }
@@ -586,11 +641,8 @@ a:hover {
     margin-right: 5px;
 }
 
-/* Unity */
-
-#unityPlayer embed {
-    width: 960px;
-    height: auto;
+.tags .tag:first {
+    margin-top: 20px;
 }
 
 /* Image Slider */

@@ -11,9 +11,9 @@ exports.render = function (res, page, content, callback) {
         "Content-Type": "text/html"
     });
 
-    stream.append(mu.compileAndRender('header.ms', content));
+    stream.append(mu.compileAndRender('header.mu', content));
     stream.append(mu.compileAndRender(page, content));
-    stream.append(mu.compileAndRender('footer.ms', {
+    stream.append(mu.compileAndRender('footer.mu', {
         'year': date.getFullYear()
     }));
     callback(stream);

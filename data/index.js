@@ -23,7 +23,7 @@ exports.getGame = function (slug, cb) {
             dbGames[i].date = moment(dbGames[i].date, "YYYY-MM-DD").format("MMMM DD, YYYY");
         }
         console.log(dbGames);
-        var background = "body {\
+        var background = "#gameHeader {\
                                         background: url('" + dbGames[0].background + "');\
                                         background-size: cover;\
                                         background-repeat: no-repeat;\

@@ -28,6 +28,7 @@
     "hbs": "~4.0.1",
     "logfmt": "~1.2.0",
     "moment": "~2.21.0",
+    "moment-timezone": "^0.5.14",
     "mongodb": "~3.0.3",
     "mongoose": "^5.0.8",
     "mu2": "~0.5.21",

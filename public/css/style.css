@@ -1,88 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
-
 /* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
@@ -90,48 +9,32 @@ video {
     margin: 0;
     padding: 0;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
 }
+
 html {
     -webkit-font-smoothing: antialiased;
 }
-body {
-    line-height: 1;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-    font-size: 16px;
-}
-ol,
-ul {
+
+ol, ul {
     list-style: none;
 }
-blockquote,
-q {
+
+blockquote, q {
     quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
+
+blockquote:before, blockquote:after, q:before, q:after {
     content: none;
 }
+
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
 .clearfix:after {
     clear: both;
     content: ' ';
@@ -142,6 +45,7 @@ table {
     width: 0;
     height: 0;
 }
+
 .clearfix {
     clear: both;
     content: ' ';
@@ -152,152 +56,190 @@ table {
     width: 0;
     height: 0;
 }
+
 a {
     color: #fff;
 }
+
+body {
+    line-height: 1;
+    font-family: "Open Sans", Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+}
+
 .wrapper {
     width: 960px;
     margin: 0 auto;
     position: relative;
 }
+
 #header {
     width: 960px;
     display: block;
-    margin: 30px 0;
+    margin: 30px auto;
     position: relative;
     text-align: center;
 }
+
 #footer {
     opacity: 0.8;
     text-align: center;
     margin: 30px 0;
 }
+
 #footer a {
     opacity: 0.5;
 }
+
 #footer a:hover {
     opacity: 1;
 }
+
 #logo {
     display: block;
 }
+
 #nav {
     position: absolute;
     right: 0;
     top: 10px;
 }
+
 #nav ul {
     margin: 0;
 }
+
 #nav ul li {
     float: right;
     list-style: none;
     margin: 0 10px;
     opacity: 0.90;
 }
+
 #nav ul li:hover {
     opacity: 1;
 }
+
 #portfolio {
     padding: 0;
 }
+
 .block {
     width: 5px;
     height: 5px;
     position: absolute;
 }
+
 .block.left {
     left: 0;
 }
+
 .block.right {
     right: 0;
 }
+
 .block.top {
     top: 0;
 }
+
 .block.bottom {
     bottom: 0;
 }
+
 li.right {
     margin-right: 0 !important;
 }
+
 .home {
-    background: rgba(255, 255, 255, 0.2);
     font-size: 22px;
     padding: 10px 5px;
 }
+
 .home p {
     padding: 0 10px 5px;
 }
+
 .tweet {
     background: rgba(255, 255, 255, 0.2);
     margin-bottom: 15px;
     padding: 10px;
 }
+
 #content {
     width: 960px;
-    margin: 0 0 10px 0;
+    margin: 0 auto 10px auto;
 }
+
 #gameTitle {
     width: 960px;
     text-align: center;
-    margin-bottom: 20px;
-}
-.home,
-.col,
-.blogImage,
-.blogTitle,
-.blogContent,
-.postImage,
-.postTitle,
-.postDate,
-.postContent,
-.gameThumb,
-.gameTitle,
-.gameContent,
-.tweet {
+    margin: 0 auto 20px auto;
+    height: 450px;
     position: relative;
 }
+
+#gameTitle .gameImage {
+    width: 200px;
+    height: auto;
+    float: left;
+    bottom: 0;
+    position: absolute;
+}
+
+.home, .col, .blogImage, .blogTitle, .blogContent, .postImage, .postTitle, .postDate, .postContent, .gameThumb, .gameTitle, .gameContent, .tweet {
+    position: relative;
+}
+
 p {
     line-height: 25px;
 }
+
 .col {
     width: 310px;
     float: left;
     margin: 0 5px 10px;
 }
+
 .col a {
     display: block;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
 }
+
 .col a img {
     display: block;
     width: 290px;
     height: 218px;
     margin: 0;
 }
+
 /* BLOG */
 
 .blog {
     margin-bottom: 10px;
 }
+
 .blog .blogImage img {
     width: 455px;
     height: auto;
     display: block;
 }
+
 .blog .blogImage {
     float: left;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     width: 455px;
 }
-.blog .blogImage a{
-  display: block;
-  min-height: 120px;
-  min-width: 455px;
+
+.blog .blogImage a {
+    display: block;
+    min-height: 120px;
+    min-width: 455px;
 }
+
 .blog .blogTitle {
     width: 455px;
     padding: 10px 10px 10px 20px;
@@ -305,9 +247,11 @@ p {
     margin: 0 0 10px;
     background: rgba(255, 255, 255, 0.2);
 }
+
 .blog .blogTitle h1 {
     font-size: 18px;
 }
+
 .blog .blogContent {
     width: 455px;
     float: left;
@@ -316,8 +260,8 @@ p {
     background: rgba(255, 255, 255, 0.1);
     font-size: 16px;
 }
-.blog .blogContent a,
-.game .gameContent a {
+
+.blog .blogContent a, .game .gameContent a {
     text-decoration: underline;
 }
 
@@ -338,6 +282,7 @@ p {
     font-size: 20px;
     text-align: center;
 }
+
 .post .postImage {
     display: inline-block;
     text-align: center;
@@ -369,59 +314,68 @@ p {
     text-align: center;
     margin: 20px 0px;
 }
+
 .game {
     margin-bottom: 10px;
 }
+
 .game .gameThumb img {
     display: block;
     max-width: 290px;
 }
+
 .game .gameThumb {
     float: left;
-    background: rgba(255, 255, 255, 0.2);
     padding: 10px;
 }
+
 .game .gameThumb a {
-  display: block;
-  min-height: 120px;
-  min-width: 290px;
+    display: block;
+    min-height: 120px;
+    min-width: 290px;
 }
+
 .game .gameTitle {
     width: 620px;
     padding: 10px 10px 10px 20px;
     float: left;
     margin: 0 0 10px;
-    background: rgba(255, 255, 255, 0.2);
 }
+
 .noThumb {
     width: auto !important;
     float: none !important;
     margin-left: 0px !important;
 }
+
 .game .gameTitle h1 {
     font-size: 18px;
 }
+
 .game .gameContent {
     width: 620px;
     float: left;
     margin-left: 10px;
     padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.1);
     font-size: 16px;
 }
+
 .contact {
     margin-top: 10px;
 }
+
 .contact .thumb img {
     display: block;
     max-width: 200px;
 }
+
 .contact .thumb {
     float: left;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     position: relative;
 }
+
 .contact .title {
     width: 710px;
     position: relative;
@@ -430,9 +384,11 @@ p {
     margin: 0 0 10px;
     background: rgba(255, 255, 255, 0.2);
 }
+
 .contact .title h1 {
     font-size: 18px;
 }
+
 .contact form .content {
     width: 710px;
     min-height: 100px;
@@ -444,9 +400,11 @@ p {
     position: relative;
     padding: 10px;
 }
+
 .contact form .content:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+
 .contact form .content .message {
     position: absolute;
     top: 10px;
@@ -460,20 +418,24 @@ p {
     font-size: 18px;
     background: rgba(0, 0, 0, 0);
 }
+
 .contact form .content .message:focus {
     outline: none;
 }
+
 .contact form .content.from {
     margin-top: 10px;
     min-height: 20px;
     width: 610px;
 }
+
 .contact form .content.send {
     width: 70px;
     margin-top: 10px;
     min-height: 20px;
     position: relative;
 }
+
 .contact form .content.send .submit {
     background: none;
     border: none;
@@ -487,6 +449,7 @@ p {
     color: white;
     line-height: 30px;
 }
+
 .contact .notice {
     width: 710px;
     height: 152px;
@@ -498,54 +461,65 @@ p {
     position: relative;
     padding: 10px;
 }
+
 .contact .notice .message {
     margin-top: 24px;
     text-align: center;
     font-size: 32px;
     line-height: 45px;
 }
+
 ::-webkit-input-placeholder {
     color: white;
 }
+
 :-moz-placeholder {
     /* Firefox 18- */
     color: white;
 }
+
 ::-moz-placeholder {
     /* Firefox 19+ */
     color: white;
 }
+
 :-ms-input-placeholder {
     color: white;
 }
+
 #project .title {
     position: relative;
     margin-bottom: 10px;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
 }
+
 #project iframe {
     display: block;
     margin: auto;
 }
+
 a {
     text-decoration: underline;
 }
+
 a:hover {
     text-decoration: underline;
 }
 
-.description{
+.description {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
     margin-top: 10px;
 }
+
 .box {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
     padding: 10px;
 }
+
 .block2 {
     position: relative;
     margin-bottom: 10px;
@@ -553,33 +527,35 @@ a:hover {
     padding: 10px;
 }
 
-.account{
-	padding: 0;
-	margin: 10px 0 0 0;
+.account {
+    padding: 0;
+    margin: 10px 0 0 0;
 }
 
-.account .section{
-	padding: 0;
-	width: 49.5%;
-	float: left;
-	margin-right: 1%;
-	text-align: center;
-	height: 150px;
-	line-height: 200px;
+.account .section {
+    padding: 0;
+    width: 49.5%;
+    float: left;
+    margin-right: 1%;
+    text-align: center;
+    height: 150px;
+    line-height: 200px;
 }
 
-.account .section.last{
-	margin-right: 0;
+.account .section.last {
+    margin-right: 0;
 }
-.account .section:hover{
+
+.account .section:hover {
     background: rgba(255, 255, 255, 0.1);
 }
+
 .account .section a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .tags .tag {
@@ -589,10 +565,12 @@ a:hover {
     background: rgba(255, 255, 255, 0.2);
     margin-left: 10px;
 }
+
 .tags {
     margin: 10px 0 10px 0;
 }
-.tags a{
+
+.tags a {
     display: block;
     float: left;
     line-height: 25px;
@@ -601,11 +579,13 @@ a:hover {
     position: relative;
     background: rgba(255, 255, 255, 0.2);
 }
+
 .tags a img {
     float: left;
     height: 25px;
     margin-right: 5px;
 }
+
 /* Unity */
 
 #unityPlayer embed {
@@ -616,65 +596,64 @@ a:hover {
 /* Image Slider */
 
 #slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+    margin: 20px auto 0 auto;
+    border-radius: 4px;
 }
 
 #slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    list-style: none;
 }
 
 #slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 960px;
-  height: 540px;
-  background: #ccc;
-  text-align: center;
-  line-height: 300px;
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 960px;
+    height: 540px;
+    background: #ccc;
+    text-align: center;
+    line-height: 300px;
 }
 
 a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
+    position: absolute;
+    top: 40%;
+    z-index: 999;
+    display: block;
+    padding: 4% 3%;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
 }
 
-a.control_prev {
-}
+a.control_prev {}
 
 a.control_next {
-  right: 0;
+    right: 0;
 }
 
 .slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
+    position: relative;
+    margin: 10px auto;
+    width: 160px;
+    font-size: 18px;
 }

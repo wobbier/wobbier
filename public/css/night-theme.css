@@ -1,0 +1,22 @@
+body{
+    text-shadow: 0 1px 1px rgba(0,0,0,0.4);
+}
+.block {
+    background: #171717;
+}
+
+.theme-background {
+    background: #171717;
+}
+
+.theme-primary {
+    background: #1C1C1C;
+}
+
+.theme-secondary {
+    background: #262626;
+}
+
+.theme-accent {
+    
+}

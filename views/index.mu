@@ -1,6 +1,6 @@
 </div>
 <div id="content">
-    <div class="home" style="text-align:center;">
+    <div class="home theme-primary" style="text-align:center;">
         <div class="block top left"></div>
         <div class="block bottom left"></div>
         <div class="block top right"></div>
@@ -11,14 +11,14 @@
         <p>Contact me <a href="#contact">at the bottom</a> if you have any questions!</p>
     </div>
         <div class="account">
-    	<div class="box section">
+    	<div class="box section theme-primary">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
                 <div class="block top right"></div>
                 <div class="block bottom right"></div>
                 <a href="https://github.com/wobbier?tab=repositories"><img src="/img/GitHub-Mark.png" height="64px"></a>
             </div>
-    	<div class="box section last">
+    	<div class="box section last theme-primary">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
                 <div class="block top right"></div>
@@ -37,7 +37,7 @@
         {{^hidden}}
         <div class="game">
         {{#thumb}}
-            <div class="gameThumb">
+            <div class="gameThumb theme-secondary">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
                 <div class="block bottom right"></div>
@@ -53,7 +53,7 @@
                 {{/external}}
             </div>
             {{/thumb}}
-            <div class="gameTitle {{^thumb}}noThumb{{/thumb}}">
+            <div class="gameTitle {{^thumb}}noThumb{{/thumb}} theme-secondary">
         {{^thumb}}
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
@@ -62,7 +62,7 @@
                 <div class="block bottom right"></div>
                 <h1><a href='{{#external}}{{url}}{{/external}}{{^external}}/game/{{slug}}{{/external}}'>{{title}}</a> - <span class="date">{{date}}</span></h1>
             </div>
-            <div class="gameContent {{^thumb}}noThumb{{/thumb}}">
+            <div class="gameContent {{^thumb}}noThumb{{/thumb}} theme-primary">
                 <div class="block top left"></div>
                 <div class="block bottom left"></div>
                 <div class="block top right"></div>

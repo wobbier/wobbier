@@ -7,13 +7,12 @@
     <meta content="wobbier, mitchell andrews, coding, programmer, video game programmer, student, indie" name="keywords">
     <title>{{title}}</title>
     <link href="/css/style.css" rel="stylesheet" type="text/css">
-    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/night-theme.css" rel="stylesheet" type="text/css">
     <script src="http://code.jquery.com/jquery-1.11.2.min.js" type="text/javascript"></script>
     <meta content="-xwR0iZlTA0I0eiL4y5ZNaQib2lM1gIgqBXCBdgXvmQ" name="google-site-verification">
 </head>
 
-<body>
-    <div class="wrapper">
+<body class="theme-background">
         <div id="header">
             <div id="logo">
                 <a href="/"><img src="/img/wobbier-logo.png"></a>

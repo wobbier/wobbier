@@ -8,7 +8,7 @@
         <p>My name is Mitch Andrews and I'm a game programmer from <strong>Toronto</strong>, Canada.</p>
         <p>I program primarily in <strong>C++</strong>, <strong>C#</strong>, and <strong>Node.js</strong> using either OS X, Windows, or Linux.</p>
         <p>I primarily use C++, Unity, and Unreal Engine 4 for game development.</p>
-        <p>Contact me <a href="#contact">at the bottom</a> if you have any questions!</p>
+        <p>Contact me <a href="#contact" class="theme-accent">at the bottom</a> if you have any questions!</p>
     </div>
         <div class="account">
     	<div class="box section theme-primary">

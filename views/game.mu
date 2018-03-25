@@ -48,7 +48,10 @@
 {{{description}}}
 {{{devNotes}}}
 </div>
-
+<div class="clearfix"></div>
+</div>
+<div class="theme-alt">
+<div class="wrapper">
 {{#isVideo}}
 <div id ="player" style="text-align: center; margin: auto">
 </div>
@@ -87,5 +90,6 @@
 </div>
 <script src="/js/slider.js"></script>
 {{/slider}}
+</div>
 </div>
 {{/games}}

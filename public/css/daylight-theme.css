@@ -1,6 +1,6 @@
 body{
     text-shadow: 0 1px 1px rgba(255,255,255,0.4);
-    color: #595959;
+    color: #34373b;
 }
 .block {
     background: #FFFFFF;
@@ -18,8 +18,11 @@ body{
     background: #D5D5D5;
 }
 
-.theme-accent {
-    
+.theme-alt {
+    background: #171717;
+}
+.theme-accent{
+    color: #B8006D;
 }
 .box.section.theme-primary img
 {
@@ -32,6 +35,8 @@ body{
 
 a {
     color: #212121;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 #nav a

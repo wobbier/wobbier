@@ -91,7 +91,7 @@
 </div>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
   <script>
-    document.getElementById('description').innerHTML =
+    document.getElementById('description').innerHTML +=
       marked('{{description}}{{devNotes}}');
   </script>
 </div>

@@ -40,13 +40,11 @@
 <div class="clearfix"></div>
 </div>
 
-<div class="description theme-secondary">
+<div id="description" class="description theme-secondary">
 <div class="block top left"></div>
 <div class="block bottom left"></div>
 <div class="block top right"></div>
 <div class="block bottom right"></div>
-{{{description}}}
-{{{devNotes}}}
 </div>
 <div class="clearfix"></div>
 </div>
@@ -91,5 +89,10 @@
 <script src="/js/slider.js"></script>
 {{/slider}}
 </div>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> 
+  <script>
+    document.getElementById('content').innerHTML =
+      marked('{{description}}{{devNotes}}');
+  </script>
 </div>
 {{/games}}

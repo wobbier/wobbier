@@ -1,7 +1,10 @@
 ---
 layout: game-video.html
+title: "Disney Magic Kingdoms - Gameloft"
 titleImage: https://i.imgur.com/ktBwCRn.png
+date: "March 18, 2016"
 url: DsvEJKTwelc
+external: false
 customCover: true
 downloads: [
         {

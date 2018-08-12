@@ -3,9 +3,6 @@
   "version": "0.0.1",
   "description": "My personal website.",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wobbier/wobbier"
@@ -22,20 +19,11 @@
   },
   "homepage": "https://github.com/wobbier/wobbier",
   "dependencies": {
-    "combined-stream": "1.0.6",
-    "debug": "~3.1.0",
-    "express": "~4.16.2",
-    "hbs": "~4.0.1",
-    "logfmt": "~1.2.0",
-    "moment": "~2.21.0",
-    "mongodb": "~3.0.3",
-    "mongoose": "^5.0.8",
-    "mu2": "~0.5.21",
-    "nodemailer": "^4.6.0",
-    "path": "~0.12.7",
-    "util": "~0.10.3"
-  },
-  "engines": {
-    "node": "6.11.1"
+    "handlebars": "^4.0.5",
+    "metalsmith": "^2.1.0",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-static": "0.0.5"
   }
 }

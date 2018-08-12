@@ -23,7 +23,7 @@ layout: layout.html
         <div class="block top right"></div>
         <div class="block bottom right"></div>
         <a href="https://github.com/wobbier?tab=repositories">
-            <img src="img/GitHub-Mark.png" height="64px">
+            <img src="img/GitHub-Mark.png" height="64px" alt="GitHub logo" />
         </a>
     </div>
     <div class="box section last">
@@ -32,13 +32,13 @@ layout: layout.html
         <div class="block top right"></div>
         <div class="block bottom right"></div>
         <a href="https://ca.linkedin.com/in/mitchellandrews">
-            <img src="img/linkedin.png">
+            <img src="img/linkedin.png" alt="LinkedIn logo" />
         </a>
     </div>
     <div class="clearfix"></div>
 </div>
 <div id="gamesHeader">
-    <img src="img/portfolio.png"></img>
+    <img src="img/portfolio.png" alt="Portfolio header image" />
 </div>
 <!--div class="games">
     <div class="game">

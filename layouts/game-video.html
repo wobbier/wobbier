@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <link href="/css/style.css" rel="stylesheet" type="text/css">
+  <link href="/css/theme.css" rel="stylesheet" type="text/css">
+  {{#customCover}}
+  <style type="text/css">
+    .block {
+      background: rgba(255, 255, 255, 0.1) !important;
+    }
+    body {
+      background: url({{background}});
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+  {{/customCover}}
+</head>
+
+<body>
+  <div class="wrapper">
+    <header>
+      <div id="logo">
+        <a href="/">
+          <img src="/img/wobbier-logo.png" alt="wobbier logo" />
+        </a>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+    <section id="content">
+      <div id="gameTitle" style="text-align:center;">
+        <img src="{{titleImage}}" />
+      </div>
+      <div id="player" style="text-align: center; margin: auto">
+      </div>
+      <script>
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('player', {
+            height: '540',
+            width: '960',
+            videoId: '{{url}}'
+          });
+        }
+      </script>
+      <div class="tags">
+        {{#downloads}}
+        <a href="{{url}}" class="{{type}}">
+          <div class="block top left"></div>
+          <div class="block bottom left"></div>
+          <div class="block top right"></div>
+          <div class="block bottom right"></div>
+          <img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
+        {{/downloads}} {{#tags}}
+        <div class="tag">
+          <div class="block top left"></div>
+          <div class="block bottom left"></div>
+          <div class="block top right"></div>
+          <div class="block bottom right"></div>{{tag}}</div>
+        {{/tags}}
+        <div class="clearfix"></div>
+      </div>
+
+      <div class="description">
+        <div class="block top left"></div>
+        <div class="block bottom left"></div>
+        <div class="block top right"></div>
+        <div class="block bottom right"></div>
+        {{{ contents }}}
+      </div>
+    </section>
+    <footer>
+      &copy; 2018 Mitch Andrews
+    </footer>
+  </div>
+</body>
+
+</html>

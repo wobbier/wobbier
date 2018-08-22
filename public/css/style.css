@@ -1,680 +1,287 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:900);
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-html {
-    -webkit-font-smoothing: antialiased;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
 }
 body {
-    line-height: 1;
-    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-    font-weight: 300;
-    color: #fff;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-    font-size: 16px;
+	line-height: 1;
 }
-ol,
-ul {
-    list-style: none;
+ol, ul {
+	list-style: none;
 }
-blockquote,
-q {
-    quotes: none;
+blockquote, q {
+	quotes: none;
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: none;
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+	border-collapse: collapse;
+	border-spacing: 0;
 }
-.clearfix:after {
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
     clear: both;
-    content: ' ';
-    display: block;
-    font-size: 0;
-    line-height: 0;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+    display: table;
 }
-.clearfix {
-    clear: both;
-    content: ' ';
-    display: block;
-    font-size: 0;
-    line-height: 0;
-    visibility: hidden;
-    width: 0;
-    height: 0;
+* {
+    box-sizing: border-box;
 }
-a {
-    color: #fff;
+body {
+    background: #FEFEFE;
+    color: #333333;
+    font-family: "Poppins";
 }
-.wrapper {
-    width: 960px;
-    margin: 0 auto;
-    position: relative;
-}
+
 header {
-    width: 960px;
-    display: block;
-    margin: 30px 0;
-    position: relative;
-    text-align: center;
-}
-footer {
-    opacity: 0.8;
-    text-align: center;
-    margin: 30px 0;
-}
-footer a {
-    opacity: 0.5;
-}
-footer a:hover {
-    opacity: 1;
-}
-#logo {
-    display: block;
-}
-#nav {
-    position: absolute;
-    right: 0;
-    top: 10px;
-}
-#nav ul {
-    margin: 0;
-}
-#nav ul li {
-    float: right;
-    list-style: none;
-    margin: 0 10px;
-    opacity: 0.90;
-}
-#nav ul li:hover {
-    opacity: 1;
-}
-#portfolio {
-    padding: 0;
-}
-.block {
-    width: 5px;
-    height: 5px;
-    position: absolute;
-}
-.block.left {
-    left: 0;
-}
-.block.right {
-    right: 0;
-}
-.block.top {
+    height: 100px;
+    width: 100%;
+    position: fixed;
     top: 0;
+    background-color: #FEFEFEB3;
+    z-index: 1;
 }
-.block.bottom {
-    bottom: 0;
-}
-li.right {
-    margin-right: 0 !important;
-}
-.home {
-    background: rgba(255, 255, 255, 0.2);
-    font-size: 22px;
-    padding: 10px 5px;
-}
-.home p {
-    padding: 0 10px 5px;
-}
-.tweet {
-    background: rgba(255, 255, 255, 0.2);
-    margin-bottom: 15px;
-    padding: 10px;
-}
-#content {
-    width: 960px;
-    margin: 0 0 10px 0;
-}
-#gameTitle {
-    width: 960px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-.home,
-.col,
-.blogImage,
-.blogTitle,
-.blogContent,
-.postImage,
-.postTitle,
-.postDate,
-.postContent,
-.gameThumb,
-.gameTitle,
-.gameContent,
-.tweet {
-    position: relative;
-}
-p {
-    line-height: 25px;
-}
-.col {
-    width: 310px;
-    float: left;
-    margin: 0 5px 10px;
-}
-.col a {
-    display: block;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-}
-.col a img {
-    display: block;
-    width: 290px;
-    height: 218px;
-    margin: 0;
-}
-/* BLOG */
 
-.blog {
-    margin-bottom: 10px;
-}
-.blog .blogImage img {
-    width: 455px;
-    height: auto;
-    display: block;
-}
-.blog .blogImage {
-    float: left;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    width: 455px;
-}
-.blog .blogImage a{
-  display: block;
-  min-height: 120px;
-  min-width: 455px;
-}
-.blog .blogTitle {
-    width: 455px;
-    padding: 10px 10px 10px 20px;
-    float: left;
-    margin: 0 0 10px;
-    background: rgba(255, 255, 255, 0.2);
-}
-.blog .blogTitle h1 {
+header h1 {
+    padding: 40px 0 0 30px;
     font-size: 18px;
-}
-.blog .blogContent {
-    width: 455px;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 16px;
-}
-.blog .blogContent a,
-.game .gameContent a {
-    text-decoration: underline;
+    font-weight: 800;
 }
 
-/* POST */
-
-.post {
-    text-align: center;
-}
-
-.post .postTitle {
-    display: inline-block;
+.title a {
+    color: #ed174b;
     font-size: 40px;
-    text-align: center;
+    font-weight: bold;
 }
 
-.post .postDate {
-    display: inline-block;
-    font-size: 20px;
-    text-align: center;
-}
-.post .postImage {
-    display: inline-block;
-    text-align: center;
+.title {
+    padding: 28px 0 20px 40px;
+    float: right;
+    margin-right: 40px;
 }
 
-.post img {
-    max-width: 100%;
-    display: block;
+header h1 a {
+    text-decoration: none;
+    color: #333333;
+}
+
+header h1 a:active {
+    text-decoration: underline;
+    color: #ed174b;
+}
+
+header h1 a:hover {
+    text-decoration: underline;
+    color: #ed174b;
+}
+
+nav {
+    width: 1180px;
     margin: 0 auto;
 }
 
-.post .postTitle, .post .postDate {
-    padding: 10px 20px;
-    margin: 0 0 10px;
-    background: rgba(255, 255, 255, 0.2);
+nav h1 {
+    float: left;
 }
 
-.post .postContent {
-    padding: 10px 20px;
-    margin: 10px 0;
-    line-height: 1.5em;
-    background: rgba(255, 255, 255, 0.2);
-    text-align: left;
+.content {
+    width: 1180px;
+    margin: 100px auto 0 auto;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
 }
 
-/* GAMES */
+.content a {
+    color: black;
+    text-decoration: none;
+}
 
-#gamesHeader {
-    text-align: center;
-    margin: 20px 0px;
+.row {
+    /*padding: 0 4px;*/
 }
-.game {
-    margin-bottom: 10px;
+
+/* Create four equal columns that sits next to each other */
+.column {
+    /*padding: 0 4px;*/
 }
-.game .gameThumb img {
+
+.column.divider {
+    -ms-flex: 1%; /* IE10 */
+    flex: 1%;
+    max-width: 1%;
+}
+
+.column img {
+    vertical-align: middle;
+}
+
+.game-link {
+    position: relative;
     display: block;
-    max-width: 290px;
+    margin-bottom: 8px;
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    overflow: hidden;
 }
-.game .gameThumb {
-    float: left;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-}
-.game .gameThumb a {
-  display: block;
-  min-height: 120px;
-  min-width: 290px;
-}
-.game .gameTitle {
-    width: 620px;
-    padding: 10px 10px 10px 20px;
-    float: left;
-    margin: 0 0 10px;
-    background: rgba(255, 255, 255, 0.2);
-}
-.noThumb {
-    width: auto !important;
-    float: none !important;
-    margin-left: 0px !important;
-}
-.game .gameTitle h1 {
-    font-size: 18px;
-}
-.game .gameContent {
-    width: 620px;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 16px;
-}
-.contact {
-    margin-top: 10px;
-}
-.contact .thumb img {
+
+.game-link:hover .game-info {
     display: block;
-    max-width: 200px;
 }
-.contact .thumb {
-    float: left;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    position: relative;
+
+.game-link:hover .game-background {
+    -webkit-filter: blur(5px); /* Safari */
+    filter: blur(5px);
 }
-.contact .title {
-    width: 710px;
-    position: relative;
-    padding: 10px 10px 10px 20px;
-    float: left;
-    margin: 0 0 10px;
-    background: rgba(255, 255, 255, 0.2);
+
+.game-link:hover .project-title {
+    text-decoration: underline;
 }
-.contact .title h1 {
-    font-size: 18px;
-}
-.contact form .content {
-    width: 710px;
-    min-height: 100px;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 16px;
-    position: relative;
-    padding: 10px;
-}
-.contact form .content:hover {
-    background: rgba(255, 255, 255, 0.2);
-}
-.contact form .content .message {
-    position: absolute;
-    top: 10px;
-    bottom: 10px;
-    left: 10px;
-    right: 10px;
-    margin: 0px;
-    width: 96%;
-    border: none;
-    color: #fff;
-    font-size: 18px;
-    background: rgba(0, 0, 0, 0);
-}
-.contact form .content .message:focus {
-    outline: none;
-}
-.contact form .content.from {
-    margin-top: 10px;
-    min-height: 20px;
-    width: 610px;
-}
-.contact form .content.send {
-    width: 70px;
-    margin-top: 10px;
-    min-height: 20px;
-    position: relative;
-}
-.contact form .content.send .submit {
-    background: none;
-    border: none;
+
+.game-link .game-info {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    background-color: #000000B3;
+    display: none;
+}
+
+.game-info {
+    height: 320px;
+}
+
+.game-background {
+    height: 320px;
     width: 100%;
-    font-size: 16px;
-    color: white;
-    line-height: 30px;
+    background-position: center;
+    background-size: cover;
 }
-.contact .notice {
-    width: 710px;
-    height: 152px;
-    float: left;
-    margin-left: 10px;
-    padding: 5px 10px;
-    background: rgba(255, 255, 255, 0.1);
-    font-size: 16px;
-    position: relative;
-    padding: 10px;
-}
-.contact .notice .message {
-    margin-top: 24px;
+
+.game-info p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #FEFEFE;
     text-align: center;
-    font-size: 32px;
-    line-height: 45px;
-}
-::-webkit-input-placeholder {
-    color: white;
-}
-:-moz-placeholder {
-    /* Firefox 18- */
-    color: white;
-}
-::-moz-placeholder {
-    /* Firefox 19+ */
-    color: white;
-}
-:-ms-input-placeholder {
-    color: white;
-}
-#project .title {
-    position: relative;
-    margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-}
-#project iframe {
-    display: block;
-    margin: auto;
-}
-a {
-    text-decoration: underline;
-}
-a:hover {
-    text-decoration: underline;
-}
-
-.description{
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-    margin-top: 10px;
-}
-.box {
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 10px;
-}
-.block2 {
-    position: relative;
-    margin-bottom: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-}
-
-.account{
-	padding: 0;
-	margin: 10px 0 0 0;
-}
-
-.account .section{
-	padding: 0;
-	width: 49.5%;
-	float: left;
-	margin-right: 1%;
-	text-align: center;
-	height: 150px;
-	line-height: 200px;
-}
-
-.account .section.last{
-	margin-right: 0;
-}
-.account .section:hover{
-    background: rgba(255, 255, 255, 0.1);
-}
-.account .section a {
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
-.tags .tag {
-    float: right;
-    padding: 10px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
-    margin-left: 10px;
-}
-.tags {
-    margin: 10px 0 10px 0;
-}
-.tags a{
-    display: block;
-    float: left;
+    width: 80%;
     line-height: 25px;
-    padding: 5px 10px;
-    margin-right: 10px;
-    position: relative;
-    background: rgba(255, 255, 255, 0.2);
-}
-.tags a img {
-    float: left;
-    height: 25px;
-    margin-right: 5px;
-}
-/* Unity */
-
-#unityPlayer embed {
-    width: 960px;
-    height: auto;
 }
 
-/* Image Slider */
-
-#slider {
-  position: relative;
-  overflow: hidden;
-  margin: 20px auto 0 auto;
-  border-radius: 4px;
+.project-title {
+    text-align: center;
+    margin: 20px 0;
+    font-weight: bold;
 }
 
-#slider ul {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  height: 200px;
-  list-style: none;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1180px) {
+    .content {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    header {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .title {
+        float: left;
+        display: block;
+    }
+    .game-info {
+        height: 220px;
+    }
+
+    .game-background {
+        height: 220px;
+    }
 }
 
-#slider ul li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0;
-  padding: 0;
-  width: 960px;
-  height: 540px;
-  background: #ccc;
-  text-align: center;
-  line-height: 300px;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .content {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        margin-top: 150px;
+    }
+    .title {
+        float: left;
+        display: block;
+    }
+    .game-link {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .title {
+        clear: both;
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .title a {
+        font-size: 30px;
+        text-align: center;
+    }
+    header {
+        height: 150px;
+    }
+    header h1 {
+        font-size: 15px;
+    }
+    nav {
+        width: auto;
+    }
 }
 
-a.control_prev, a.control_next {
-  position: absolute;
-  top: 40%;
-  z-index: 999;
-  display: block;
-  padding: 4% 3%;
-  width: auto;
-  height: auto;
-  background: rgba(255, 255, 255, 0.2);
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 18px;
-  opacity: 0.8;
-  cursor: pointer;
+.bullet-list {
+    list-style-type: disc;
 }
 
-a.control_prev:hover, a.control_next:hover {
-  opacity: 1;
-  -webkit-transition: all 0.2s ease;
+.bullet-list li {
+    margin: 5px 0 5px 25px;
 }
 
-a.control_prev {
-}
-
-a.control_next {
-  right: 0;
-}
-
-.slider_option {
-  position: relative;
-  margin: 10px auto;
-  width: 160px;
-  font-size: 18px;
+footer {
+    text-align: center;
+    padding: 50px;
 }

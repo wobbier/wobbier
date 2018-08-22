@@ -1,27 +1,38 @@
 ---
 layout: layout.html
-games: [{
+projects: [{
     "slug": "dmk",
-    "thumb": "https://i.imgur.com/P0tSRO7.png",
-    "description": "
-    I worked on various aspects of Disney Magic Kingdoms for mobile.<br />
-    • Worked with artists to help integrate animations and cutscenes into the game<br />
-    • Implemented the tracking system code used for creating a detailed overview of the user’s behavior and created tools to make our tracking code data-driven<br />
-    • Created tools for designers to help increase productivity when creating quests for the game<br />
-    • Worked on the online event system to extend the flexibility for time sensitive tasks for users playing the game",
-    "title": "Disney Magic Kingdoms - Gameloft",
-    "date": "March 18, 2016"
+    "title": "🕹️ Disney Magic Kingdoms",
+    "background": "img/dmk.jpg",
+    "description": "I worked on various aspects of Disney Magic Kingdoms for mobile.",
+    "date": "March 18, 2016",
+    "url": "/game/dmk"
+},{
+    "slug": "mitch-engine",
+    "title": "🚀 Mitch Engine",
+    "background": "img/me-logo.png",
+    "description": "Mitch Engine is a simple c++ component based engine for building 3d games, demos, and other graphical applications. It's a great hobby project to keep me exploring the world of c++.",
+    "date": "May 07, 2016",
+    "url": "https://github.com/wobbier/MitchEngine"
 },{
     "slug": "goatie-3d",
-    "thumb": "https://i.imgur.com/SrpIido.png",
+    "title": "🕹️ Goatie 3D",
+    "background": "https://i.imgur.com/SrpIido.png",
     "description": "A spiritual successor to the cult hit Goatie Jr. This year's T.O. Jam goal was to take goatie to the next level.<br />Available soon for mobile on this site!",
-    "title": "Goatie 3D",
-    "date": "May 07, 2016"
+    "date": "May 07, 2016",
+    "url": "/game/goatie-3d"
+},{
+    "slug": "vrtx",
+    "title": "🕹️ VRTX",
+    "background": "https://i.imgur.com/wUGcl6c.png",
+    "description": "Hovercrafts, Multiplayer, EXPLOSIONS!?! Battle against other players in your own VRTX hovercraft fully equipped with weapons of your choice! Jump into an online match to prove your dominance on the race track or in the battle arena.",
+    "date": "May 07, 2016",
+    "url": "/game/vrtx"
 },{
     "slug": "wobbier",
-    "description": "This website is currently hosted on GitHub Pages and powered by Metalsmith, Node.js, and Mustache. It has has always been an active project for me because it gave me the opportunity to explore web related languages / services like Node.js, Mongoose, PHP, MySQL, and a little Ruby.",
     "title": "Personal Portfolio",
-    "thumb": "https://i.imgur.com/5XeHqld.png",
+    "description": "This website is currently hosted on GitHub Pages and powered by Metalsmith, Node.js, and Mustache. It has has always been an active project for me because it gave me the opportunity to explore web related languages / services like Node.js, Mongoose, PHP, MySQL, and a little Ruby.",
+    "background": "https://i.imgur.com/5XeHqld.png",
     "date": "June 6, 2010",
     "url": "/"
 }]

@@ -2,86 +2,106 @@
 <html lang="en">
 
 <head>
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <link href="/css/style.css" rel="stylesheet" type="text/css">
-  <link href="/css/theme.css" rel="stylesheet" type="text/css">
-  {{#customCover}}
-  <style type="text/css">
-    .block {
-      background: rgba(255, 255, 255, 0.1) !important;
+  <title>{{title}}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="/css/style.css">
+
+  <meta charset="UTF-8">
+
+  <style>
+    .tags {
+      display: none;
     }
-    body {
-      background: url({{background}});
-      background-size: cover;
-      background-repeat: no-repeat;
+
+    .videoWrapper {
+      position: relative;
+      width: 100%;
+      /* 16:9 */
+      padding-bottom: 56.25%;
     }
+
+    .videoWrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .description {
+      font-size: 20px;
+      line-height: 22px;
+      margin-top: 40px;
+    }
+
   </style>
-  {{/customCover}}
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <div id="logo">
-        <a href="/">
-          <img src="/img/wobbier-logo.png" alt="wobbier logo" />
-        </a>
-      </div>
-      <div class="clearfix"></div>
-    </header>
-    <section id="content">
-      <div id="gameTitle" style="text-align:center;">
-        <img src="{{titleImage}}" />
-      </div>
+  <header>
+    <nav>
+      <h1>
+        <a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
+      </h1>
+      <h1>
+        <a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
+      </h1>
+      <h1>
+        <a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
+      </h1>
+      <h1>
+        <a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
+      </h1>
+      <h1>
+        <a href="/about.html">ABOUT</a>
+      </h1>
+      <h1 class="title">
+        <a href="/">MITCH ANDREWS</a>
+      </h1>
+    </nav>
+  </header>
+  <div class="content">
+    <div class="videoWrapper">
       <div id="player" style="text-align: center; margin: auto">
       </div>
-      <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
+    </div>
+    <script>
+      var tag = document.createElement('script');
+      tag.src = "https://www.youtube.com/iframe_api";
 
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-        
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-            height: '540',
-            width: '960',
-            videoId: '{{url}}'
-          });
-        }
-      </script>
-      <div class="tags">
-        {{#downloads}}
-        <a href="{{url}}" class="{{type}}">
-          <div class="block top left"></div>
-          <div class="block bottom left"></div>
-          <div class="block top right"></div>
-          <div class="block bottom right"></div>
-          <img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
-        {{/downloads}} {{#tags}}
-        <div class="tag">
-          <div class="block top left"></div>
-          <div class="block bottom left"></div>
-          <div class="block top right"></div>
-          <div class="block bottom right"></div>{{tag}}</div>
-        {{/tags}}
-        <div class="clearfix"></div>
-      </div>
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      <div class="description">
-        <div class="block top left"></div>
-        <div class="block bottom left"></div>
-        <div class="block top right"></div>
-        <div class="block bottom right"></div>
-        {{{ contents }}}
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '349',
+          width: '560',
+          videoId: '{{url}}'
+        });
+      }
+    </script>
+    <div class="tags">
+      {{#downloads}}
+      <a href="{{url}}" class="{{type}}">
+        <img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
+      {{/downloads}}
+      <div class="clearfix"></div>
+      {{#tags}}
+      <div class="tag">
+        {{tag}}
       </div>
-    </section>
-    <footer>
-      &copy; 2018 Mitch Andrews
-    </footer>
+      {{/tags}}
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="description">
+      {{{ contents }}}
+    </div>
   </div>
+  <footer>
+    &copy; Mitch Andrews 2018
+  </footer>
 </body>
 
 </html>

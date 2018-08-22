@@ -2,108 +2,53 @@
 <html lang="en">
 
 <head>
-  <title>{{ title }}</title>
-  <meta name="description" content="{{ description }}">
-  <link href="css/style.css" rel="stylesheet" type="text/css">
-  <link href="css/theme.css" rel="stylesheet" type="text/css">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta charset="UTF-8">
 </head>
 
 <body>
-  <div class="wrapper">
     <header>
-      <div id="logo">
-        <a href="/">
-          <img src="img/wobbier-logo.png" alt="wobbier logo">
-        </a>
-      </div>
-      <div class="clearfix"></div>
+        <nav>
+            <h1>
+                <a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
+            </h1>
+            <h1>
+                <a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
+            </h1>
+            <h1>
+                <a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
+            </h1>
+            <h1>
+                <a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
+            </h1>
+            <h1>
+                <a href="/about.html">ABOUT</a>
+            </h1>
+            <h1 class="title">
+                <a href="/">MITCH ANDREWS</a>
+            </h1>
+        </nav>
     </header>
-    <section id="content">
-        <div class="home" style="text-align:center;">
-            <div class="block top left"></div>
-            <div class="block bottom left"></div>
-            <div class="block top right"></div>
-            <div class="block bottom right"></div>
-            <p>My name is Mitch Andrews and I'm a game programmer from
-                <strong>Toronto</strong>, Canada.</p>
-            <p>I program primarily in
-                <strong>C++</strong>,
-                <strong>C#</strong>, and
-                <strong>Node.js</strong> using either OS X, Windows, or Linux.</p>
-            <p>I primarily use C++, Unity, and Unreal Engine 4 for game development.</p>
-            <p>Contact me
-                <a href="#contact">at the bottom</a> if you have any questions!</p>
-        </div>
-        <div class="account">
-            <div class="box section">
-                <div class="block top left"></div>
-                <div class="block bottom left"></div>
-                <div class="block top right"></div>
-                <div class="block bottom right"></div>
-                <a href="https://github.com/wobbier?tab=repositories">
-                    <img src="img/GitHub-Mark.png" height="64px" alt="GitHub logo" />
-                </a>
+    <div class="content">
+        {{#projects}}
+        <a href="{{url}}" class="game-link">
+            <div class="game-background" style="background-image: url('{{background}}');">
             </div>
-            <div class="box section last">
-                <div class="block top left"></div>
-                <div class="block bottom left"></div>
-                <div class="block top right"></div>
-                <div class="block bottom right"></div>
-                <a href="https://ca.linkedin.com/in/mitchellandrews">
-                    <img src="img/linkedin.png" alt="LinkedIn logo" />
-                </a>
+            <div class="game-info">
+                <p>{{{description}}}</p>
             </div>
-            <div class="clearfix"></div>
-        </div>
-        <div id="gamesHeader">
-            <img src="img/portfolio.png" alt="Portfolio header image" />
-        </div>
-        <div class="games">
-          {{#games}}
-            <div class="game">
-                <div class="gameThumb">
-                    <div class="block top left"></div>
-                    <div class="block bottom left"></div>
-                    <div class="block bottom right"></div>
-                    {{#external}}
-                    <a href="{{url}}">
-                        <img src="{{thumb}}" />
-                    </a>
-                    {{/external}} {{^external}}
-                    <a href="/game/{{slug}}">
-                        <img src="{{thumb}}" />
-                    </a>
-                    {{/external}}
-                </div>
-                <div class="gameTitle {{^thumb}}noThumb{{/thumb}}">
-                    {{^thumb}}
-                    <div class="block top left"></div>
-                    <div class="block bottom left"></div>
-                    {{/thumb}}
-                    <div class="block top right"></div>
-                    <div class="block bottom right"></div>
-                    <h1>
-                        <a href='{{#external}}{{url}}{{/external}}{{^external}}/game/{{slug}}{{/external}}'>{{title}}</a> -
-                        <span class="date">{{date}}</span>
-                    </h1>
-                </div>
-                <div class="gameContent {{^thumb}}noThumb{{/thumb}}">
-                    <div class="block top left"></div>
-                    <div class="block bottom left"></div>
-                    <div class="block top right"></div>
-                    <div class="block bottom right"></div>
-                    <p>{{{ description }}}</p>
-                </div>
-                <div class="clearfix"></div>
+            <div class="project-title">
+                <h1>{{title}}</h1>
             </div>
-            {{/games}}
-            {{{ contents }}}
-        </div>
-    </section>
+        </a>
+        {{/projects}}
+    </div>
     <footer>
-      &copy; 2018 Mitch Andrews
+        &copy; Mitch Andrews 2018
     </footer>
-  </div>
 </body>
 
 </html>

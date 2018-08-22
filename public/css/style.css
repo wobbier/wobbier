@@ -160,22 +160,22 @@ a {
     margin: 0 auto;
     position: relative;
 }
-#header {
+header {
     width: 960px;
     display: block;
     margin: 30px 0;
     position: relative;
     text-align: center;
 }
-#footer {
+footer {
     opacity: 0.8;
     text-align: center;
     margin: 30px 0;
 }
-#footer a {
+footer a {
     opacity: 0.5;
 }
-#footer a:hover {
+footer a:hover {
     opacity: 1;
 }
 #logo {

@@ -30,3 +30,10 @@ Metalsmith(__dirname)
   .build(function(err, files) {
     if (err) { throw err; }
   });
+
+const express = require('express')
+const app = express()
+
+app.use(express.static('build'))
+
+app.listen(9292, () => console.log('Site running on http://localhost:9292!'))

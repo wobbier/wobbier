@@ -7,7 +7,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Build",
+            "name": "Build & Run",
             "program": "${workspaceRoot}/app.js",
             "cwd": "${workspaceRoot}"
         }

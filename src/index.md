@@ -20,7 +20,7 @@ projects: [{
     "background": "/img/s-i.png",
     "description": "A spiritual successor to the cult hit Goatie 3D. This year's T.O. Jam goal was to take goatie, and trash it in favor of something better.",
     "date": "May 07, 2018",
-    "url": "https://wobbier.itch.io/statistically-improbable"
+    "url": "/game/statistically-improbable"
 },{
     "slug": "goatie-3d",
     "title": "🕹️ Goatie 3D",

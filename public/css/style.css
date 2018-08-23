@@ -215,6 +215,13 @@ nav h1 {
   width: 100%;
 }
 
+.description a {
+    color: #ed174b;
+}
+.description a:hover {
+    text-decoration: underline;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1180px) {
     .content {

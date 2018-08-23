@@ -3,6 +3,7 @@ layout: game-video.html
 title: "VRTX"
 date: "May 07, 2016"
 url: _Jk3LL82paw
+hasVideo: true
 ---
 Hovercrafts, Multiplayer, EXPLOSIONS!?! Battle against other players in your own VRTX hovercraft fully equipped with weapons of your choice! Jump into an online match to prove your dominance on the race track or in the battle arena.
 

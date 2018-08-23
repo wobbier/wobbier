@@ -3,6 +3,7 @@ layout: game-video.html
 title: "Disney Magic Kingdoms - Gameloft"
 date: "March 18, 2016"
 url: DsvEJKTwelc
+hasVideo: true
 downloads: [
         {
             "type": "apple",

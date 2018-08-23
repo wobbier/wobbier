@@ -12,13 +12,20 @@ projects: [{
     "title": "🚀 Mitch Engine",
     "background": "img/me-logo.png",
     "description": "Mitch Engine is a simple c++ component based engine for building 3d games, demos, and other graphical applications. It's a great hobby project to keep me exploring the world of c++.",
-    "date": "May 07, 2016",
+    "date": "n/a",
     "url": "https://github.com/wobbier/MitchEngine"
+},{
+    "slug": "statistically-improbable",
+    "title": "🕹️ Statistically Improbable",
+    "background": "/img/s-i.png",
+    "description": "A spiritual successor to the cult hit Goatie 3D. This year's T.O. Jam goal was to take goatie, and trash it in favor of something better.",
+    "date": "May 07, 2018",
+    "url": "https://wobbier.itch.io/statistically-improbable"
 },{
     "slug": "goatie-3d",
     "title": "🕹️ Goatie 3D",
     "background": "https://i.imgur.com/SrpIido.png",
-    "description": "A spiritual successor to the cult hit Goatie Jr. This year's T.O. Jam goal was to take goatie to the next level.<br />Available soon for mobile on this site!",
+    "description": "A spiritual successor to the cult hit Goatie Jr. This year's T.O. Jam goal was to take goatie to the next level.",
     "date": "May 07, 2016",
     "url": "/game/goatie-3d"
 },{

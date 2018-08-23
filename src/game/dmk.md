@@ -1,11 +1,8 @@
 ---
 layout: game-video.html
 title: "Disney Magic Kingdoms - Gameloft"
-titleImage: https://i.imgur.com/ktBwCRn.png
 date: "March 18, 2016"
 url: DsvEJKTwelc
-external: false
-customCover: true
 downloads: [
         {
             "type": "apple",
@@ -23,9 +20,7 @@ downloads: [
             "url": "https://www.microsoft.com/en-ca/store/p/disney-magic-kingdoms/9nblggh6bng3"
         }
     ]
-background: "https://i.imgur.com/HNGWg2p.png"
 ---
-WELCOME TO THE MOST MAGICAL PLACE ON MOBILE!<br /><br />
 When Maleficent casts an evil spell on the Kingdom, ridding it of all of its powerful magic, can you help bring it all back? Relive the thrill of Disney Parks and create the most fantastical Park of your dreams in Disney Magic Kingdoms!<br /><br />
 I worked on various aspects of Disney Magic Kingdoms for mobile.<br />
 <ul class="bullet-list">

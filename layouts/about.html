@@ -58,6 +58,10 @@
       border: none;
       margin: 0;
     }
+
+    .padded-wrapper {
+      padding-top: 0px;
+    }
   </style>
 </head>
 
@@ -85,26 +89,6 @@
     </nav>
   </header>
   <div class="content">
-    <div class="videoWrapper">
-      <div id="player" style="text-align: center; margin: auto">
-      </div>
-    </div>
-    <script>
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
-          height: '349',
-          width: '560',
-          videoId: '{{url}}'
-        });
-      }
-    </script>
     <div class="padded-wrapper">
       <div class="game-title">
         <h1>{{title}}</h1>
@@ -112,20 +96,6 @@
         <div class="clearfix"></div>
       </div>
       <hr />
-      <div class="tags">
-        {{#downloads}}
-        <a href="{{url}}" class="{{type}}">
-          <img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
-        {{/downloads}}
-        <div class="clearfix"></div>
-        {{#tags}}
-        <div class="tag">
-          {{tag}}
-        </div>
-        {{/tags}}
-        <div class="clearfix"></div>
-      </div>
-
       <div class="description">
         {{{ contents }}}
       </div>

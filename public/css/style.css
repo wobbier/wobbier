@@ -73,7 +73,7 @@ header {
 }
 
 header h1 {
-    padding: 40px 0 0 30px;
+    padding: 40px 0 0 40px;
     font-size: 18px;
     font-weight: 800;
 }
@@ -201,13 +201,18 @@ nav h1 {
     color: #FEFEFE;
     text-align: center;
     width: 80%;
-    line-height: 25px;
+    line-height: 1.45;
 }
 
 .project-title {
     text-align: center;
     margin: 20px 0;
     font-weight: bold;
+}
+
+.padded-wrapper {
+  padding: 40px;
+  width: 100%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -223,25 +228,23 @@ nav h1 {
         max-width: 100%;
     }
     .title {
-        float: left;
+        float: right;
         display: block;
     }
-    .game-info {
-        height: 220px;
-    }
-
-    .game-background {
-        height: 220px;
+    header nav {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
     }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 880px) {
     .content {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
-        margin-top: 150px;
+        margin-top: 0px;
     }
     .title {
         float: left;
@@ -265,12 +268,20 @@ nav h1 {
     }
     header {
         height: 150px;
+        position: unset;
     }
     header h1 {
         font-size: 15px;
     }
     nav {
         width: auto;
+    }
+    .game-info {
+        height: 320px;
+    }
+
+    .game-background {
+        height: 320px;
     }
 }
 
@@ -285,4 +296,5 @@ nav h1 {
 footer {
     text-align: center;
     padding: 50px;
+    font-family: "Poppins";
 }

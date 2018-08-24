@@ -1,9 +1,10 @@
-var Metalsmith  = require('metalsmith');
-var markdown    = require('metalsmith-markdown');
-var layouts     = require('metalsmith-layouts');
-var permalinks  = require('metalsmith-permalinks');
-var asset       = require('metalsmith-static');
-var date        = new Date();
+var Metalsmith = require('metalsmith');
+var markdown = require('metalsmith-markdown');
+var layouts = require('metalsmith-layouts');
+var permalinks = require('metalsmith-permalinks');
+var asset = require('metalsmith-static');
+var beautify = require('metalsmith-beautify');
+var date = new Date();
 
 Metalsmith(__dirname)
   .metadata({
@@ -26,8 +27,8 @@ Metalsmith(__dirname)
     "src": "public",
     "dest": ".",
     "createDest": true
-  }))
-  .build(function(err, files) {
+  })).use(beautify())
+  .build(function (err, files) {
     if (err) { throw err; }
   });
 

@@ -71,39 +71,38 @@ header {
     background-color: #FEFEFEB3;
     z-index: 1;
 }
-
-header h1 {
-    padding: 40px 0 0 40px;
-    font-size: 18px;
-    font-weight: 800;
+.title {
+    padding: 28px 0 20px 40px;
+    float: left;
+    margin-right: 40px;
 }
-
 .title a {
     color: #ed174b;
     font-size: 40px;
     font-weight: bold;
+    text-decoration: none;
+}
+.title a:hover {
+    text-decoration: underline;
 }
 
-.title {
-    padding: 28px 0 20px 40px;
+header h2 {
+    padding: 40px 40px 0 0;
+    font-size: 18px;
+    font-weight: 800;
     float: right;
-    margin-right: 40px;
 }
 
-header h1 a {
+header h2 a {
     text-decoration: none;
     color: #333333;
 }
 
-header h1 a:active {
+header h2 a:hover {
     text-decoration: underline;
     color: #ed174b;
 }
 
-header h1 a:hover {
-    text-decoration: underline;
-    color: #ed174b;
-}
 
 nav {
     width: 1180px;

@@ -57,6 +57,11 @@ table {
 * {
     box-sizing: border-box;
 }
+
+.accent {
+    color: #ed174b !important;
+}
+
 body {
     background: #FEFEFE;
     color: #333333;
@@ -210,7 +215,7 @@ nav h1 {
 }
 
 .padded-wrapper {
-  padding: 40px;
+  padding: 20px 40px 40px;
   width: 100%;
 }
 
@@ -292,15 +297,24 @@ nav h1 {
 }
 
 .bullet-list {
-    list-style-type: disc;
 }
 
 .bullet-list li {
+    color: #ed174b;
     margin: 5px 0 5px 25px;
+    list-style-type: disclosure-closed;
+}
+
+.bullet-list li div {
+    color: #333333;
 }
 
 footer {
     text-align: center;
     padding: 50px;
     font-family: "Poppins";
+}
+
+.section {
+    margin-top: 20px;
 }

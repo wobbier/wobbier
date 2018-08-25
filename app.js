@@ -6,13 +6,35 @@ var asset = require('metalsmith-static');
 var beautify = require('metalsmith-beautify');
 var date = new Date();
 
+var data = {
+  title: "Mitch Andrews | Game Developer",
+  description: "The home of Mitch Andrews!",
+  year: date.getFullYear(),
+  url: "http://wobbier.github.io/",
+  headerTitle: "MITCH ANDREWS",
+  links: [{
+    name: "EMAIL",
+    url: "mailto:mitchdandrews@gmail.com"
+  },{
+    name: "TWITTER",
+    url: "https://twitter.com/wobbier",
+    isExternal: true
+  },{
+    name: "LINKEDIN",
+    url: "https://linkedin.com/in/mitchellandrews",
+    isExternal: true
+  },{
+    name: "GITHUB",
+    url: "https://github.com/wobbier",
+    isExternal: true
+  },{
+    name: "ABOUT",
+    url: "/about"
+  }]
+};
+
 Metalsmith(__dirname)
-  .metadata({
-    title: "Mitch Andrews | Game Developer",
-    description: "The home of Mitch Andrews!",
-    year: date.getFullYear(),
-    url: "http://wobbier.github.io/"
-  })
+  .metadata(data)
   .source('./src')
   .destination('./build')
   .clean(false)

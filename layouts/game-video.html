@@ -13,7 +13,7 @@
     .tags {
       display: none;
     }
-    
+
     .videoWrapper {
       position: relative;
       width: 100%;
@@ -24,7 +24,7 @@
     .videoWrapper.iPhoneX {
       padding-bottom: 46.25%;
     }
-    
+
     .videoWrapper iframe {
       position: absolute;
       top: 0;
@@ -32,42 +32,42 @@
       width: 100%;
       height: 100%;
     }
-    
+
     .description {
       font-size: 1.1em;
       line-height: 1.45;
       margin-top: 20px;
     }
-    
+
     .game-title {
       width: 100%;
       font-size: 1.1em;
       font-weight: bold;
       line-height: 1.45;
     }
-    
+
     .game-title h1 {
       font-weight: bold;
       font-size: 1.3em;
       float: left
     }
-    
+
     .game-title h2 {
       float: right;
     }
-    
+
     .section-title {
       width: 100%;
       line-height: 1.45;
       margin-bottom: 15px;
     }
-    
+
     .section-title h1 {
       font-weight: bold;
       font-size: 1.15em;
       float: left
     }
-    
+
     .content hr {
       height: 2px;
       background-color: #ed174b;
@@ -82,23 +82,13 @@
   <header>
     <nav>
       <h1 class="title">
-        <a href="/">MITCH ANDREWS</a>
+        <a href="/">{{headerTitle}}</a>
       </h1>
+      {{#links}}
       <h2>
-        <a href="https://twitter.com/wobbier" rel="external" target="_blank">TWITTER</a>
+        <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
       </h2>
-      <h2>
-        <a href="https://linkedin.com/in/mitchellandrews" rel="external" target="_blank">LINKEDIN</a>
-      </h2>
-      <h2>
-        <a href="mailto:mitchdandrews@gmail.com">EMAIL</a>
-      </h2>
-      <h2>
-        <a href="https://github.com/wobbier" rel="external" target="_blank">GITHUB</a>
-      </h2>
-      <h2>
-        <a href="/about">ABOUT</a>
-      </h2>
+      {{/links}}
     </nav>
   </header>
   <div class="content">

@@ -55,6 +55,6 @@ When Maleficent casts an evil spell on the Kingdom, ridding it of all of its pow
       <hr />
       </div>
 <div class="videoWrapper iPhoneX">
-<iframe src="https://player.vimeo.com/video/286463386" width="100%" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/286698331" width="100%" height="295" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
 </div>

@@ -1,4 +1,0 @@
-[submodule "build"]
-	path = build
-	url = git@github.com:wobbier/wobbier.github.io.git
-	ignore = dirty

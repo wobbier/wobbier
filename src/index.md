@@ -33,7 +33,7 @@ projects: [{
     "title": "🕹️ VRTX",
     "background": "https://i.imgur.com/wUGcl6c.png",
     "description": "Hovercrafts, Multiplayer, EXPLOSIONS!?! Battle against other players in your own VRTX hovercraft fully equipped with weapons of your choice! Jump into an online match to prove your dominance on the race track or in the battle arena.",
-    "date": "May 07, 2016",
+    "date": "May 06, 2015",
     "url": "/game/vrtx"
 },{
     "slug": "wobbier",

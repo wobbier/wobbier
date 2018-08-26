@@ -82,13 +82,9 @@ header {
     margin-right: 40px;
 }
 .title a {
-    color: #ed174b;
     font-size: 40px;
     font-weight: bold;
     text-decoration: none;
-}
-.title a:hover {
-    text-decoration: underline;
 }
 
 header h2 {
@@ -103,7 +99,7 @@ header h2 a {
     color: #333333;
 }
 
-header h2 a:hover {
+header a:hover {
     text-decoration: underline;
     color: #ed174b;
 }
@@ -154,7 +150,6 @@ nav h1 {
 .game-link {
     position: relative;
     display: block;
-    margin-bottom: 8px;
     -ms-flex: 50%; /* IE10 */
     flex: 50%;
     max-width: 50%;
@@ -215,7 +210,7 @@ nav h1 {
 }
 
 .padded-wrapper {
-  padding: 20px 40px 40px;
+  padding: 20px 40px 10px;
   width: 100%;
 }
 

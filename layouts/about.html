@@ -2,99 +2,99 @@
 <html lang="en">
 
 <head>
-  <title>{{title}}</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-  <link rel="stylesheet" href="/css/style.css">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="/css/style.css">
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=560">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=560">
 
-  <style>
-    .tags {
-      display: none;
-    }
+    <style>
+        .tags {
+            display: none;
+        }
 
-    .videoWrapper {
-      position: relative;
-      width: 100%;
-      /* 16:9 */
-      padding-bottom: 56.25%;
-    }
+        .videoWrapper {
+            position: relative;
+            width: 100%;
+            /* 16:9 */
+            padding-bottom: 56.25%;
+        }
 
-    .videoWrapper iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
+        .videoWrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
 
-    .description {
-      font-size: 1.1em;
-      line-height: 1.45;
-      margin-top: 20px;
-    }
+        .description {
+            font-size: 1.1em;
+            line-height: 1.45;
+            margin-top: 20px;
+        }
 
-    .game-title {
-      width: 100%;
-      font-size: 1.1em;
-      font-weight: bold;
-      line-height: 1.45;
-    }
+        .game-title {
+            width: 100%;
+            font-size: 1.1em;
+            font-weight: bold;
+            line-height: 1.45;
+        }
 
-    .game-title h1 {
-      font-weight: bold;
-      font-size: 1.15em;
-      float: left
-    }
+        .game-title h1 {
+            font-weight: bold;
+            font-size: 1.15em;
+            float: left
+        }
 
-    .game-title h2 {
-      float: right;
-    }
+        .game-title h2 {
+            float: right;
+        }
 
-    .content hr {
-      height: 2px;
-      background-color: #ed174b;
-      width: 100%;
-      border: none;
-      margin: 0;
-    }
+        .content hr {
+            height: 2px;
+            background-color: #ed174b;
+            width: 100%;
+            border: none;
+            margin: 0;
+        }
 
-    .padded-wrapper {
-      padding-top: 0px;
-    }
-  </style>
+        .padded-wrapper {
+            padding-top: 0px;
+        }
+    </style>
 </head>
 
 <body>
-  <header>
-    <nav>
-      <h1 class="title">
-        <a href="/">{{headerTitle}}</a>
-      </h1>
-      {{#links}}
-      <h2>
-        <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
-      </h2>
-      {{/links}}
-    </nav>
-  </header>
-  <div class="content">
-    <div class="padded-wrapper">
-      <div class="game-title">
-        <h1>{{title}}</h1>
-        <h2>{{date}}</h2>
-        <div class="clearfix"></div>
-      </div>
-      <hr />
-      <div class="description">
-        {{{ contents }}}
-      </div>
+    <header>
+        <nav>
+            <h1 class="title">
+                <a href="/" class="accent">{{headerTitle}}</a>
+            </h1>
+            {{#links}}
+            <h2>
+                <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
+            </h2>
+            {{/links}}
+        </nav>
+    </header>
+    <div class="content">
+        <div class="padded-wrapper">
+            <div class="game-title">
+                <h1>{{title}}</h1>
+                <h2>{{date}}</h2>
+                <div class="clearfix"></div>
+            </div>
+            <hr />
+            <div class="description">
+                {{{ contents }}}
+            </div>
+        </div>
     </div>
-  </div>
-  <footer>
-    &copy;{{year}} Mitch Andrews
-  </footer>
+    <footer>
+        &copy;{{year}} Mitch Andrews
+    </footer>
 </body>
 
 </html>

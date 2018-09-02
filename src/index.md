@@ -4,7 +4,7 @@ projects: [{
     "slug": "dmk",
     "title": "🕹️ Disney Magic Kingdoms",
     "background": "img/dmk.jpg",
-    "description": "I worked on various aspects of Disney Magic Kingdoms for mobile.",
+    "description": "Relive the thrill of Disney Parks and create the most fantastical Park of your dreams in Disney Magic Kingdoms!",
     "date": "March 18, 2016",
     "url": "/game/dmk"
 },{
@@ -18,7 +18,7 @@ projects: [{
     "slug": "statistically-improbable",
     "title": "🕹️ Statistically Improbable",
     "background": "/img/s-i.png",
-    "description": "A spiritual successor to the cult hit Goatie 3D. This year's T.O. Jam goal was to take goatie, and trash it in favor of something better.",
+    "description": "Statistically vending machines kill more often than sharks. Time to disprove it. Smash or Gobble more yellow dudes than your friend and prove who the best killer is!",
     "date": "May 07, 2018",
     "url": "/game/statistically-improbable"
 },{
@@ -38,7 +38,7 @@ projects: [{
 },{
     "slug": "wobbier",
     "title": "Personal Portfolio",
-    "description": "This website is currently hosted on GitHub Pages and powered by Metalsmith, Node.js, and Mustache. It has has always been an active project for me because it gave me the opportunity to explore web related languages / services like Node.js, Mongoose, PHP, MySQL, and a little Ruby.",
+    "description": "This website is currently hosted on GitHub Pages and powered by Metalsmith, Node.js, and Mustache. It has has always been an active project for me because it gave me the opportunity to explore web related languages / services like Node.js, Mongoose, and some PHP.",
     "background": "https://i.imgur.com/5XeHqld.png",
     "date": "June 6, 2010",
     "url": "/"

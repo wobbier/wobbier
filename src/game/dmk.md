@@ -43,10 +43,13 @@ downloads: [
             <div>Implemented the <a href="#BCF">Busy Character Finder</a> UI feature which shows all active activites in the kindom</div>
         </li>
         <li>
-            <div>Improved FPS by 46% through modifying the way we update objects off screen.</div>
+            <div>Improved FPS by 46% on a full park through modifying the way we update objects off screen.</div>
         </li>
         <li>
-            <div>Created a spline based camera bounds system for artists to tweak camera bounds when we add more land XD</div>
+            <div>Created a free flying camera used in the marketing material creation process.</div>
+        </li>
+        <li>
+            <div>Created a spline based camera bounds system for artists to tweak camera bounds to be more flexible</div>
         </li>
         <li>
             <div>Implemented each boss battle up until Update 23: The Little Mermaid</div>

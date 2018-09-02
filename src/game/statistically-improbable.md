@@ -5,5 +5,8 @@ date: "May 07, 2016"
 headerImage: "/img/rather-wasted.gif"
 hasHeaderImage: true
 ---
-A spiritual successor to the cult hit Goatie 3D. This year's T.O. Jam goal was to take goatie, and trash it in favor of something better.<br />
+<div class="padded-wrapper">
+Statistically vending machines kill more often than sharks. Time to disprove it. Smash or Gobble more yellow dudes than your friend and prove who the best killer is!<br><br>
+Two controllers required.<br><br>
 <a href="https://wobbier.itch.io/statistically-improbable">Play it here.</a>
+</div>

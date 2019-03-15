@@ -1,6 +1,13 @@
 ---
 layout: layout.html
 projects: [{
+    "slug": "lego",
+    "title": "🚧",
+    "background": "img/lego.jpg",
+    "description": "Read the official press release!",
+    "date": "",
+    "url": "https://www.gameloft.com/corporate/en/press-room/press-details/4310/"
+},{
     "slug": "dmk",
     "title": "🕹️ Disney Magic Kingdoms",
     "background": "img/dmk.jpg",

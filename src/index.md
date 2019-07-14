@@ -2,11 +2,11 @@
 layout: layout.html
 projects: [{
     "slug": "lego",
-    "title": "🚧",
+    "title": "🚧 LEGO Legacy: Heroes Unboxed",
     "background": "img/lego.jpg",
-    "description": "Read the official press release!",
-    "date": "",
-    "url": "https://www.gameloft.com/corporate/en/press-room/press-details/4310/"
+    "description": "Introducing LEGO® Legacy: Heroes Unboxed! Coming to Apple and Android devices this fall!",
+    "date": "TBD",
+    "url": "/game/lego-legacy"
 },{
     "slug": "dmk",
     "title": "🕹️ Disney Magic Kingdoms",
@@ -18,7 +18,7 @@ projects: [{
     "slug": "mitch-engine",
     "title": "🚀 Mitch Engine",
     "background": "img/me-logo.png",
-    "description": "Mitch Engine is a simple c++ component based engine for building 3d games, demos, and other graphical applications. It's a great hobby project to keep me exploring the world of c++.",
+    "description": "Mitch Engine is a simple c++ component based game engine for creating games on the Xbox One and Windows 10 Store.\n It's a great hobby project to keep me exploring the world of c++.",
     "date": "n/a",
     "url": "https://github.com/wobbier/MitchEngine"
 },{

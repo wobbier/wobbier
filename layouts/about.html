@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=560">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="title">
+                <a href="/" class="accent">{{headerTitle}}</a>
+            </h1>
+            {{#links}}
+            <h2>
+                <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
+            </h2>
+            {{/links}}
+        </nav>
+    </header>
+    <div class="content">
+        <div class="padded-wrapper">
+            <div class="game-title">
+                <h1>{{title}}</h1>
+                <h2>{{date}}</h2>
+                <div class="clearfix"></div>
+            </div>
+            <hr />
+        </div>
+        <div class="description">
+        {{{contents}}}
+        </div>
+        <div class="padded-wrapper" style="line-height:50px;">
+        <div class="game-title">
+            <h1>Favorite Games</h1>
+            <div class="clearfix"></div>
+        </div>
+        <hr style="margin-bottom: 25px;" />
+        {{#favorites}}
+        <a href="{{url}}" class="favorite-game-link game-link" style="float: left;">
+            <div class="game-background" style="background-image: url('{{background}}');">
+            </div>
+            <div class="game-info">
+                <p>{{{description}}}</p>
+            </div>
+            <div class="project-title">
+                <h1>{{title}}</h1>
+            </div>
+        </a>
+        {{/favorites}}
+        </div>
+        <div class="description">
+            <div class="padded-wrapper">
+                <div class="section-title">
+                    <h1>My Game Jam List</h1>
+                    <div class="clearfix"></div>
+                    <hr />
+                </div>
+                <ul class="bullet-list">
+                    <li>
+                        <div>TOJam 13</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div><a href="/game/statistically-improbable">Statistically Improbable</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>TOJam 12</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div>Head Trip</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>TOJam 11</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div><a href="/game/goatie-3d">Goatie 3D</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>TOJam 10</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div>Goatie Jr</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>TOJam 9</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div><a href="https://wobbier.itch.io/the-post-man">The Post Man</a></div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>TOJam 8</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div>Hard In The Paint</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>{CODE} 2014</div>
+                    </li>
+                    <li>
+                        <div>Great Canadian Appathon 4</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div>Cat Blaster</div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div>Global Game Jam 2015</div>
+                        <ul class="bullet-list">
+                            <li>
+                                <div>Wormie Strikes Back</div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+            </div>
+        </div>
+        <img src="/img/giphy.gif" width="100%" />
+    </div>
+    <footer>
+        &copy;{{year}} Mitch Andrews
+    </footer>
+</body>
+
+</html>

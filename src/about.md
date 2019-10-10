@@ -1,7 +1,33 @@
 ---
-layout: game-video.html
+layout: about.html
 title: "About"
+favorites: [{
+    "title": "INSIDE",
+    "background": "/img/inside.jpg",
+    "description": "Hunted and alone, a boy finds himself drawn into the center of a dark project.",
+    "date": " July 7th 2016",
+    "url": ""
+},{
+    "title": "Firewatch",
+    "background": "/img/firewatch.jpg",
+    "description": "Firewatch is a single-player first-person mystery set in the Wyoming wilderness, where your only emotional lifeline is the person on the other end of a handheld radio. ",
+    "date": " Feburary 9th 2016",
+    "url": ""
+},{
+    "title": "Hotline Miami",
+    "background": "/img/hotline-miami.jpg",
+    "description": "Hotline Miami is a high-octane action game overflowing with raw brutality, hard-boiled gunplay and skull crushing close combat. ",
+    "date": "October 23rd 2012",
+    "url": ""
+},{
+    "title": "Thirty Flights of Loving",
+    "background": "/img/thirty-flights-of-loving.jpg",
+    "description": "Explore the world of Thirty Flights of Loving through a first-person short story. Take a deep dive with high-flying schemers, lovelorn criminals, and more stray kittens than you can shake a stick at.",
+    "date": "August 20th 2012",
+    "url": ""
+}]
 ---
+
 <div class="padded-wrapper" style="line-height:50px;">
     <div class="selfie">
         <img src="/img/me.jpg" />
@@ -13,82 +39,4 @@ title: "About"
     You can contact me though <a href="mailto:mitchdandrews@gmail.com">email</a> or <a href="https://twitter.com/wobbier">@wobbier</a> on Twitter if you have any questions!<br>
     </div>
     <div class="clearfix"></div>
-</div>
-<div class="padded-wrapper">
-    <div class="section-title">
-        <h1>My Game Jam List</h1>
-        <div class="clearfix"></div>
-        <hr />
-    </div>
-    <ul class="bullet-list">
-        <li>
-            <div>TOJam 13</div>
-            <ul class="bullet-list">
-                <li>
-                    <div><a href="/game/statistically-improbable">Statistically Improbable</a></div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>TOJam 12</div>
-            <ul class="bullet-list">
-                <li>
-                    <div>Head Trip</div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>TOJam 11</div>
-            <ul class="bullet-list">
-                <li>
-                    <div><a href="/game/goatie-3d">Goatie 3D</a></div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>TOJam 10</div>
-            <ul class="bullet-list">
-                <li>
-                    <div>Goatie Jr</div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>TOJam 9</div>
-            <ul class="bullet-list">
-                <li>
-                    <div><a href="https://wobbier.itch.io/the-post-man">The Post Man</a></div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>TOJam 8</div>
-            <ul class="bullet-list">
-                <li>
-                    <div>Hard In The Paint</div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>{CODE} 2014</div>
-        </li>
-        <li>
-            <div>Great Canadian Appathon 4</div>
-            <ul class="bullet-list">
-                <li>
-                    <div>Cat Blaster</div>
-                </li>
-            </ul>
-        </li>
-        <li>
-            <div>Global Game Jam 2015</div>
-            <ul class="bullet-list">
-                <li>
-                    <div>Wormie Strikes Back</div>
-                </li>
-            </ul>
-        </li>
-    </ul>
-    <br>
-<img src="/img/giphy.gif" width="100%" />
 </div>

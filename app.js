@@ -13,13 +13,6 @@ var data = {
   url: "http://wobbier.github.io/",
   headerTitle: "MITCH ANDREWS",
   links: [{
-    name: "EMAIL",
-    url: "mailto:mitchdandrews@gmail.com"
-  },{
-    name: "TWITTER",
-    url: "https://twitter.com/wobbier",
-    isExternal: true
-  },{
     name: "LINKEDIN",
     url: "https://linkedin.com/in/mitchellandrews",
     isExternal: true

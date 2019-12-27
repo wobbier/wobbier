@@ -20,7 +20,7 @@
   "homepage": "https://github.com/wobbier/wobbier",
   "dependencies": {
     "express": "^4.17.1",
-    "handlebars": "^4.1.2",
+    "handlebars": "^4.3.0",
     "metalsmith": "^2.1.0",
     "metalsmith-beautify": "^0.2.0",
     "metalsmith-layouts": "^1.4.1",

@@ -1,7 +1,7 @@
 ---
 layout: game-video.html
 title: "LEGO Legacy: Heroes Unboxed"
-date: "Fall 2019"
-url: TygVI70AE9Y
+date: "Feb 27th, 2019"
+url: bdU5HlSx7k0
 hasVideo: true
 ---

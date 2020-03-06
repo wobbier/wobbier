@@ -22,8 +22,16 @@
             {{/links}}
         </nav>
     </header>
-    <div class="content">
+    <div class="mega-game">
+        <div style="bottom: 15px; position:absolute; width: 100%;" class="downArrow">
+            <div style="margin: 0 auto; color: white;display: table;
+            background: 000000FF;
+            padding: 10px; "><img src="/img/arrow.png" /></div>
+        </div>
+    </div>
+    <div class="content game-list">
         {{#projects}}
+        {{#visible}}
         <a href="{{url}}" class="game-link">
             <div class="game-background" style="background-image: url('{{background}}');">
             </div>
@@ -34,6 +42,7 @@
                 <h1>{{title}}</h1>
             </div>
         </a>
+        {{/visible}}
         {{/projects}}
     </div>
     <footer>

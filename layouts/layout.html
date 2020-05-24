@@ -10,10 +10,14 @@
 </head>
 
 <body>
-    <header>
+    <header class="main-nav-white">
+        <!--div class="blurred-bg">
+            <div style="background-image: url('/img/watch-dogs-legion.jpg');">
+            </div>
+        </div-->
         <nav>
             <h1 class="title">
-                <a href="/" class="accent">{{headerTitle}}</a>
+                <a href="/" class="accent"><img src="/img/mitch-andrews.png" alt="{{headerTitle}}" /></a>
             </h1>
             {{#links}}
             <h2>
@@ -28,6 +32,9 @@
             background: 000000FF;
             padding: 10px; "><img src="/img/arrow.png" /></div>
         </div>
+    </div>
+    <div class="content-title">
+        <h1><img src="/img/games.png" alt="Games" /></h1>
     </div>
     <div class="content game-list">
         {{#projects}}
@@ -44,6 +51,25 @@
         </a>
         {{/visible}}
         {{/projects}}
+    </div>
+    <div class="content-title">
+        <h1><img src="/img/personal-projects.png" alt="Personal Projects" /></h1>
+    </div>
+    <div class="content game-list">
+        {{#personal}}
+        {{#visible}}
+        <a href="{{url}}" class="game-link">
+            <div class="game-background" style="background-image: url('{{background}}');">
+            </div>
+            <div class="game-info">
+                <p>{{{description}}}</p>
+            </div>
+            <div class="project-title">
+                <h1>{{title}}</h1>
+            </div>
+        </a>
+        {{/visible}}
+        {{/personal}}
     </div>
     <footer>
         &copy;{{year}} Mitch Andrews

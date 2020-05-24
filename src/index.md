@@ -1,6 +1,15 @@
 ---
 layout: layout.html
 projects: [{
+    "slug": "watch-dogs-legion",
+    "title": "📸 Watch Dogs: Legion",
+    "background": "img/watch-dogs-legion-thumb.png",
+    "description": "WELCOME TO THE RESISTANCE<br />
+Anyone can be your weapon.",
+    "date": "TBD",
+    "url": "/game/watch-dogs-legion",
+    "visible": true
+},{
     "slug": "lego",
     "title": "🕹️ LEGO Legacy: Heroes Unboxed",
     "background": "img/lego-thumb.jpg",
@@ -16,7 +25,8 @@ projects: [{
     "date": "March 18, 2016",
     "url": "/game/dmk",
     "visible": true
-},{
+}]
+personal: [{
     "slug": "mitch-engine",
     "title": "🚀 Mitch Engine",
     "background": "img/me-logo.png",

@@ -6,20 +6,22 @@
     <link rel="stylesheet" href="/css/style.css">
 
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=560">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-    <header>
+    <header class="header-black">
         <nav>
             <h1 class="title">
                 <a href="/" class="accent"><img src="/img/mitch-andrews-black.png" alt="{{headerTitle}}" /></a>
             </h1>
-            {{#links}}
-            <h2>
-                <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
-            </h2>
-            {{/links}}
+            <div class="links">
+                {{#links}}
+                <h2>
+                    <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
+                </h2>
+                {{/links}}
+            </div>
         </nav>
     </header>
     <div class="content">

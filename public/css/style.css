@@ -328,7 +328,7 @@ nav h1 {
    }
  }
 /* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 1200px) {
     .content {
         -ms-flex: 100%;
         flex: 100%;
@@ -347,15 +347,50 @@ nav h1 {
         flex: 100%;
         max-width: 100%;
     }
+    .game-info, .game-background
+    {
+        height: 250px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .title{
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+    .links
+    {
+        text-align: center;
+    }
+    .links h2
+    {
+        display: inline;
+        float: none;
+        padding: 40px 20px 20px 20px;
+    }
+    header
+    {
+        height: auto;
+        padding-bottom: 20px;
+        position: unset;
+    }
+    .header-black{
+        position: unset !important;
+    }
+    .content{
+        margin: unset;
+    }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 780px) {
     .content {
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
         margin-top: 0px;
+        margin: unset;
     }
     .title {
         float: left;
@@ -380,12 +415,13 @@ nav h1 {
     }
     header {
         height: 150px;
-        position: unset;
         display: block;
     }
-    header h1 {
-        font-size: 15px;
+
+    header h1 img{
+        height: 25px;
     }
+
     nav {
         width: auto;
     }
@@ -395,6 +431,27 @@ nav h1 {
 
     .game-background {
         height: 320px;
+    }
+
+    .title{
+        width: 100%;
+        text-align: center;
+    }
+    .links
+    {
+        text-align: center;
+    }
+    .links h2
+    {
+        display: inline;
+        float: none;
+        padding: 40px 10px 20px 10px;
+    }
+    header
+    {
+        height: auto;
+        padding-bottom: 20px;
+        position: unset;
     }
 }
 
@@ -421,10 +478,40 @@ footer {
     margin-top: 20px;
 }
 
+/* TAGS */
 
 .tags {
     display: none;
 }
+
+.download
+{
+    float: left;
+}
+.download a
+{
+    height: 30px;
+    vertical-align: middle;
+    display:inline-block;
+}
+.download a .platform
+{
+    height: 30px;
+    vertical-align: middle;
+}
+
+.download a .image
+{
+    height: 30px;
+    display:block;
+}
+
+.download a .image img
+{
+    height: inherit;
+}
+
+/* TAGS */
 
 .videoWrapper {
     position: relative;

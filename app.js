@@ -10,7 +10,7 @@ var data = {
   title: "Mitch Andrews | Game Developer",
   description: "The home of Mitch Andrews!",
   year: date.getFullYear(),
-  url: "http://wobbier.github.io/",
+  url: "https://wobbier.github.io/",
   headerTitle: "MITCH ANDREWS",
   links: [{
     name: "LINKEDIN",

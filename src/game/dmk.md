@@ -4,6 +4,7 @@ title: "Disney Magic Kingdoms - Gameloft"
 date: "March 18, 2016"
 url: zEIor5XQT-o
 hasVideo: true
+embed-image: "https://wobbier.com/img/dmk.jpg"
 downloads: [
         {
             "type": "apple",

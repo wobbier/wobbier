@@ -7,28 +7,47 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.17.1/themes/prism.min.css" rel="stylesheet" />
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=560">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="{{title}}">
+    <meta itemprop="description" content="">
+    <meta itemprop="image" content="{{embed-image}}">
 
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://wobbier.com/game/dmk">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="{{embed-image}}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="{{embed-image}}">
     <style>
     </style>
 </head>
 
 <body>
-    <header>
+    <header class="header-black">
         <nav>
             <h1 class="title">
                 <a href="/" class="accent"><img src="/img/mitch-andrews-black.png" alt="{{headerTitle}}" /></a>
             </h1>
-            {{#links}}
-            <h2>
-                <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
-            </h2>
-            {{/links}}
+            <div class="links">
+                {{#links}}
+                <h2>
+                    <a href="{{url}}" {{#isExternal}} rel="external" target="_blank" {{/isExternal}}>{{name}}</a>
+                </h2>
+                {{/links}}
+            </div>
         </nav>
     </header>
     <div class="content">
         {{#hasHeaderImage}}
-        <img src="{{headerImage}}" style="margin: 0 auto;" />
+        <img src="{{headerImage}}" style="margin: 0 auto; max-width: 100%;" />
         {{/hasHeaderImage}}
         {{#hasVideo}}
         <div class="videoWrapper">
@@ -62,8 +81,14 @@
             <hr />
             <div class="tags">
                 {{#downloads}}
-                <a href="{{url}}" class="{{type}}">
-                    <img src="/img/{{type}}.png" style="display:inline;" />{{text}}</a>
+                <div class="download">
+                    <a href="{{url}}" class="{{type}}">
+                        <span class="image">
+                            <img src="/img/{{type}}.png" />
+                        </span>
+                        {{text}}
+                    </a>
+                </div>
                 {{/downloads}}
                 <div class="clearfix"></div>
                 {{#tags}}

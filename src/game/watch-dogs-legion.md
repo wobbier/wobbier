@@ -1,8 +1,8 @@
 ---
 layout: game-video.html
 title: "Watch Dogs: Legion"
-date: "TBD"
-url: Zi8k4KGyW6o
+date: "October 29th, 2020"
+url: L20nioDjCxU
 hasVideo: true
 downloads: [
         {

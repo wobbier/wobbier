@@ -402,6 +402,10 @@ nav h1 {
         max-width: 100%;
         margin-left: 0px !important;
     }
+    .main-nav-white nav h2 a
+    {
+        font-size: 20px;
+    }
     .title {
         clear: both;
         width: 100%;
@@ -426,11 +430,11 @@ nav h1 {
         width: auto;
     }
     .game-info {
-        height: 320px;
+        height: 250px;
     }
 
     .game-background {
-        height: 320px;
+        height: 250px;
     }
 
     .title{

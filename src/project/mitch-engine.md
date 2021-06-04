@@ -3,6 +3,7 @@ layout: game-video.html
 title: "Mitch Engine"
 date: "March 18, 2016"
 headerImage: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/Docs/GitHub/Havana.png"
+embed-image: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/Docs/GitHub/Havana.png"
 hasHeaderImage: true
 ---
 <div class="padded-wrapper">

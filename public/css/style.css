@@ -1,290 +1,370 @@
-@import url('//fonts.googleapis.com/css?family=Poppins');
+@import url("//fonts.googleapis.com/css?family=Poppins");
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Clearfix */
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  margin: 0;
 }
 .accent {
-    color: #ed174b !important;
+  color: #ed174b !important;
 }
 
 body {
-    background: #FEFEFE;
-    color: #333333;
-    font-family: "Poppins";
+  background: #fefefe;
+  color: #333333;
+  font-family: "Poppins";
 }
 
 header {
-    height: 100px;
-    width: 100%;
-    position: absolute !important;
-    top: 0;
-    background-color: #FEFEFE;
-    z-index: 1;
+  height: 100px;
+  width: 100%;
+  position: absolute !important;
+  top: 0;
+  background-color: #fefefe;
+  z-index: 1;
 }
 .title {
-    padding: 28px 0 20px 40px;
-    float: left;
-    margin-right: 40px;
+  padding: 28px 0 20px 40px;
+  float: left;
+  margin-right: 40px;
 }
 .title a {
-    font-size: 40px;
-    font-weight: bold;
-    text-decoration: none;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
 }
 .blurred-bg {
-    background-image: url('/img/watch-dogs-legion.jpg');
-    height: 100px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    z-index: -1;
-    display: block;
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
-    filter: blur(5px);
-    background-size: cover; 
+  background-image: url("/img/splinter-cell-remake-large.jpg");
+  height: 100px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  background-size: cover;
 }
 header h2 {
-    padding: 40px 40px 0 0;
-    font-size: 22px;
-    font-weight: 800;
-    float: right;
-    letter-spacing: 3px;
+  padding: 40px 40px 0 0;
+  font-size: 22px;
+  font-weight: 800;
+  float: right;
+  letter-spacing: 3px;
 }
 
 header h2 a {
-    text-decoration: none;
-    color: #333333;
+  text-decoration: none;
+  color: #333333;
 }
 
 header a:hover {
-    text-decoration: underline;
-    color: #ed174b;
+  text-decoration: underline;
+  color: #ed174b;
 }
 
-
 nav {
-    width: 1180px;
-    margin: 0 auto;
+  width: 1180px;
+  margin: 0 auto;
 }
 
 nav h1 {
-    float: left;
+  float: left;
 }
 
 .content {
-    width: 1280px;
-    margin: 100px auto 0 auto;
-    display: -ms-flexbox; /* IE10 */
-    display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
-    flex-wrap: wrap;
+  width: 1280px;
+  margin: 100px auto 0 auto;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
 }
 
 .content a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 .game-list {
-    margin-top: 50px !important;
+  margin-top: 50px !important;
 }
 
 .row {
-    /*padding: 0 4px;*/
+  /*padding: 0 4px;*/
 }
 
 /* Create four equal columns that sits next to each other */
 .column {
-    /*padding: 0 4px;*/
+  /*padding: 0 4px;*/
 }
 
 .column.divider {
-    -ms-flex: 1%; /* IE10 */
-    flex: 1%;
-    max-width: 1%;
+  -ms-flex: 1%; /* IE10 */
+  flex: 1%;
+  max-width: 1%;
 }
 
 .column img {
-    vertical-align: middle;
+  vertical-align: middle;
 }
 
 .selfie {
-    float: left;
-    margin: 0 25px;
-    border-radius: 550px;
-    overflow: hidden;
+  float: left;
+  margin: 0 25px;
+  border-radius: 550px;
+  overflow: hidden;
 }
 
 .selfie img {
-    width: 200px;
-    display: block;
+  width: 200px;
+  display: block;
 }
 
 .game-link {
-    position: relative;
-    display: block;
-    -ms-flex: 44%; /* IE10 */
-    flex: 44%;
-    max-width: 44%;
-    margin-left: 4%;
-    overflow: hidden;
+  position: relative;
+  display: block;
+  -ms-flex: 44%; /* IE10 */
+  flex: 44%;
+  max-width: 44%;
+  margin-left: 4%;
+  overflow: hidden;
 }
 
 .favorite-game-link {
-    -ms-flex: none !important;
-    flex: none !important;
-    width: 460px !important;
-    height: 215px !important;
-    margin: 10px 45px;
-    max-width: none;
+  -ms-flex: none !important;
+  flex: none !important;
+  width: 460px !important;
+  height: 215px !important;
+  margin: 10px 45px;
+  max-width: none;
 }
 
 .favorite-game-link .game-background {
-    height: 215px;
-    width: 460px;
-    background-position: center;
-    background-size: cover;
-
+  height: 215px;
+  width: 460px;
+  background-position: center;
+  background-size: cover;
 }
 
 .game-link:hover .game-info {
-    display: block;
+  display: block;
 }
 
 .game-link:hover .game-background {
-    -webkit-filter: blur(5px); /* Safari */
-    filter: blur(5px);
+  -webkit-filter: blur(5px); /* Safari */
+  filter: blur(5px);
 }
 
 .game-link:hover .project-title {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .game-link .game-info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #000000B3;
-    display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000b3;
+  display: none;
 }
 
 .favorite-game-link .game-info {
-    height: inherit !important;
+  height: inherit !important;
 }
 
-
 .game-info {
-    height: 320px;
+  height: 320px;
 }
 
 .game-background {
-    height: 320px;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
+  height: 320px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .game-info p {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 20px;
-    color: #FEFEFE;
-    text-align: center;
-    width: 80%;
-    line-height: 1.45;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fefefe;
+  text-align: center;
+  width: 80%;
+  line-height: 1.45;
 }
 
 .mega-game {
-    width: 100%;
-    height:100%;
-    background-image: url('/img/watch-dogs-legion.jpg');
-    background-position: top;
-    background-size: cover;
-    position: relative;
-    top: 0;
-    min-height: 100%;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/splinter-cell-remake-large.jpg");
+  background-position: top;
+  background-size: cover;
+  position: relative;
+  top: 0;
+  min-height: 100%;
 }
 
 .main-nav-white {
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.2);
 }
-.main-nav-white nav h2 a, .main-nav-white nav h1 a {
-    color: white !important;
+.main-nav-white nav h2 a,
+.main-nav-white nav h1 a {
+  color: white !important;
 }
 
 .project-title {
-    text-align: center;
-    margin: 20px 0;
-    font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
 .padded-wrapper {
@@ -293,288 +373,276 @@ nav h1 {
 }
 
 .description a {
-    color: #ed174b;
+  color: #ed174b;
 }
 .description a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .content-title {
-    text-align: center;
-    margin: 50px 0 0 0;
+  text-align: center;
+  margin: 50px 0 0 0;
 }
 .content-title h1 {
-    font-size: 35pt;
-    text-transform: uppercase;
-    font-weight: bolder;
+  font-size: 35pt;
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 .downArrow {
-   animation: arrowBounce 4s infinite;
-   animation-timing-function: ease;
-   transition: opacity 0.3s ease;
- }
- 
- @keyframes arrowBounce {
-   0% {
-     transform: translateY(0);
-   }
- 
-   50% {
-     transform: translateY(15px);
-   }
- 
-   100% {
-     transform: translateY(0);
-   }
- }
+  animation: arrowBounce 4s infinite;
+  animation-timing-function: ease;
+  transition: opacity 0.3s ease;
+}
+
+@keyframes arrowBounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1200px) {
-    .content {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-    header {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-    .title {
-        display: block;
-    }
-    header nav {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-    .game-info, .game-background
-    {
-        height: 250px;
-    }
+  .content {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  header {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .title {
+    display: block;
+  }
+  header nav {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+  .game-info,
+  .game-background {
+    height: 250px;
+  }
 }
 @media screen and (max-width: 1200px) {
-    .title{
-        width: 100%;
-        text-align: center;
-        padding-left: 0px;
-        margin-top: 0px;
-    }
-    .links
-    {
-        text-align: center;
-    }
-    .links h2
-    {
-        display: inline;
-        float: none;
-        padding: 40px 20px 20px 20px;
-    }
-    header
-    {
-        height: auto;
-        padding-bottom: 20px;
-        position: unset;
-    }
-    .header-black{
-        position: unset !important;
-    }
-    .content{
-        margin: unset;
-    }
+  .title {
+    width: 100%;
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+  .links {
+    text-align: center;
+  }
+  .links h2 {
+    display: inline;
+    float: none;
+    padding: 40px 20px 20px 20px;
+  }
+  header {
+    height: auto;
+    padding-bottom: 20px;
+    position: unset;
+  }
+  .header-black {
+    position: unset !important;
+  }
+  .content {
+    margin: unset;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 780px) {
-    .content {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-        margin-top: 0px;
-        margin: unset;
-    }
-    .title {
-        float: left;
-        display: block;
-    }
-    .game-link {
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-        margin-left: 0px !important;
-    }
-    .main-nav-white nav h2 a
-    {
-        font-size: 20px;
-    }
-    .title {
-        clear: both;
-        width: 100%;
-        padding-left: 0;
-        padding-right: 0;
-        text-align: center;
-    }
-    .title a {
-        font-size: 30px;
-        text-align: center;
-    }
-    header {
-        height: 150px;
-        display: block;
-    }
+  .content {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 0px;
+    margin: unset;
+  }
+  .title {
+    float: left;
+    display: block;
+  }
+  .game-link {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin-left: 0px !important;
+  }
+  .main-nav-white nav h2 a {
+    font-size: 20px;
+  }
+  .title {
+    clear: both;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .title a {
+    font-size: 30px;
+    text-align: center;
+  }
+  header {
+    height: 150px;
+    display: block;
+  }
 
-    header h1 img{
-        height: 25px;
-    }
+  header h1 img {
+    height: 25px;
+  }
 
-    nav {
-        width: auto;
-    }
-    .game-info {
-        height: 250px;
-    }
+  nav {
+    width: auto;
+  }
+  .game-info {
+    height: 250px;
+  }
 
-    .game-background {
-        height: 250px;
-    }
+  .game-background {
+    height: 250px;
+  }
 
-    .title{
-        width: 100%;
-        text-align: center;
-    }
-    .links
-    {
-        text-align: center;
-    }
-    .links h2
-    {
-        display: inline;
-        float: none;
-        padding: 40px 10px 20px 10px;
-    }
-    header
-    {
-        height: auto;
-        padding-bottom: 20px;
-        position: unset;
-    }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+  .links {
+    text-align: center;
+  }
+  .links h2 {
+    display: inline;
+    float: none;
+    padding: 40px 10px 20px 10px;
+  }
+  header {
+    height: auto;
+    padding-bottom: 20px;
+    position: unset;
+  }
 }
 
 .bullet-list {
 }
 
 .bullet-list li {
-    color: #ed174b;
-    margin: 5px 0 5px 25px;
-    list-style-type: disclosure-closed;
+  color: #ed174b;
+  margin: 5px 0 5px 25px;
+  list-style-type: disclosure-closed;
 }
 
 .bullet-list li div {
-    color: #333333;
+  color: #333333;
 }
 
 footer {
-    text-align: center;
-    padding: 50px;
-    font-family: "Poppins";
+  text-align: center;
+  padding: 50px;
+  font-family: "Poppins";
 }
 
 .section {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* TAGS */
 
 .tags {
-    display: none;
+  display: none;
 }
 
-.download
-{
-    float: left;
+.download {
+  float: left;
 }
-.download a
-{
-    height: 30px;
-    vertical-align: middle;
-    display:inline-block;
+.download a {
+  height: 30px;
+  vertical-align: middle;
+  display: inline-block;
 }
-.download a .platform
-{
-    height: 30px;
-    vertical-align: middle;
+.download a .platform {
+  height: 30px;
+  vertical-align: middle;
 }
 
-.download a .image
-{
-    height: 30px;
-    display:block;
+.download a .image {
+  height: 30px;
+  display: block;
 }
 
-.download a .image img
-{
-    height: inherit;
+.download a .image img {
+  height: inherit;
 }
 
 /* TAGS */
 
 .videoWrapper {
-    position: relative;
-    width: 100%;
-    /* 16:9 */
-    padding-bottom: 56.25%;
+  position: relative;
+  width: 100%;
+  /* 16:9 */
+  padding-bottom: 56.25%;
 }
 
 .videoWrapper.iPhoneX {
-    padding-bottom: 46.25%;
+  padding-bottom: 46.25%;
 }
 
 .videoWrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .description {
-    font-size: 1.1em;
-    line-height: 1.45;
-    width: 100%;
+  font-size: 1.1em;
+  line-height: 1.45;
+  width: 100%;
 }
 
 .game-title {
-    width: 100%;
-    font-size: 1.1em;
-    font-weight: bold;
-    line-height: 1.45;
+  width: 100%;
+  font-size: 1.1em;
+  font-weight: bold;
+  line-height: 1.45;
 }
 
 .game-title h1 {
-    font-weight: bold;
-    font-size: 1.3em;
-    float: left
+  font-weight: bold;
+  font-size: 1.3em;
+  float: left;
 }
 
 .game-title h2 {
-    float: right;
+  float: right;
 }
 
 .section-title {
-    width: 100%;
-    line-height: 1.45;
-    margin-bottom: 15px;
+  width: 100%;
+  line-height: 1.45;
+  margin-bottom: 15px;
 }
 
 .section-title h1 {
-    font-weight: bold;
-    font-size: 1.15em;
-    float: left
+  font-weight: bold;
+  font-size: 1.15em;
+  float: left;
 }
 
 .content hr {
-    height: 2px;
-    background-color: #ed174b;
-    width: 100%;
-    border: none;
-    margin: 0;
+  height: 2px;
+  background-color: #ed174b;
+  width: 100%;
+  border: none;
+  margin: 0;
 }

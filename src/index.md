@@ -3,6 +3,16 @@ layout: layout.html
 projects:
   [
     {
+      "slug": "splinter-cell-remake",
+      "title": "Splinter Cell Remake",
+      "background": "img/splinter-cell-remake.jpg",
+      "description": "",
+      "date": "TBD",
+      "url": "https://news.ubisoft.com/en-us/article/4adJLuhgYrPboHAPRfK7Oz/splinter-cell-remake-begins-development-at-ubisoft-toronto",
+      "visible": true,
+      "external": true,
+    },
+    {
       "slug": "watch-dogs-legion",
       "title": "📸 Watch Dogs: Legion",
       "background": "img/watch-dogs-legion-thumb.png",

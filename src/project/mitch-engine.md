@@ -2,17 +2,15 @@
 layout: game-video.html
 title: "Mitch Engine"
 date: "March 18, 2016"
-headerImage: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/Docs/GitHub/Havana.png"
-embed-image: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/Docs/GitHub/Havana.png"
+headerImage: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/.github/Havana.png"
+embed-image: "https://raw.githubusercontent.com/wobbier/MitchEngine/master/.github/Havana.png"
 hasHeaderImage: true
 ---
+
 <div class="padded-wrapper">
     <!--  DsvEJKTwelc -->
 <a href="https://ci.appveyor.com/project/wobbier/mitchengine">
     <img src="https://ci.appveyor.com/api/projects/status/7x55po7se0siesdn?svg=true" alt="Build status">
-</a>
-<a href="https://www.codacy.com/app/rastaninja77/MitchEngine?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=wobbier/MitchEngine&amp;utm_campaign=Badge_Grade">
-    <img src="https://api.codacy.com/project/badge/Grade/858846f643cc47258ed72f9cfddb28b2" alt="Codacy Badge">
 </a>
 <img src="https://img.shields.io/github/license/wobbier/mitchengine.svg" alt="license">
 <br>
@@ -24,6 +22,7 @@ Check out my Trello Board to check out the current development status.
 <br>
 <br>
 The engine is:
+
 <ul class="bullet-list">
     <li>
         <div>Open source</div>
@@ -82,6 +81,7 @@ Transform& TransformComponent = ModelEntity->AddComponent&lt;Transform>("Ground 
 
 Model& ModelComponent = ModelEntity->AddComponent&lt;Model>("Assets/Models/ground.fbx");
 </code></pre>
+
 <div id="MerlinsGatheringSpell" class="section">
     <div class="section-title">
         <h1>Main features</h1>

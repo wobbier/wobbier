@@ -173,7 +173,7 @@ header {
   text-decoration: none;
 }
 .blurred-bg {
-  background-image: url("/img/splinter-cell-remake-large.jpg");
+  background-image: url("/img/mw22.jpg");
   height: 100px;
   position: absolute;
   left: 0;
@@ -343,8 +343,8 @@ nav h1 {
 .mega-game {
   width: 100%;
   height: 100%;
-  background-image: url("/img/splinter-cell-remake-large.jpg");
-  background-position: top;
+  background-image: url("/img/mw22.jpg");
+  background-position: center;
   background-size: cover;
   position: relative;
   top: 0;

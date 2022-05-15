@@ -3,6 +3,16 @@ layout: layout.html
 projects:
   [
     {
+      "slug": "mw2",
+      "title": "Modern Warfare II",
+      "background": "img/mw22.jpg",
+      "description": "",
+      "date": "TBD",
+      "url": "https://twitter.com/InfinityWard/status/1519723165475389444",
+      "visible": true,
+      "external": true,
+    },
+    {
       "slug": "splinter-cell-remake",
       "title": "Splinter Cell Remake",
       "background": "img/splinter-cell-remake.jpg",

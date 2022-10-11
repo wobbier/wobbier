@@ -8,9 +8,8 @@ projects:
       "background": "img/mw22.jpg",
       "description": "",
       "date": "TBD",
-      "url": "https://twitter.com/InfinityWard/status/1519723165475389444",
+      "url": "/game/mw2",
       "visible": true,
-      "external": true,
     },
     {
       "slug": "splinter-cell-remake",

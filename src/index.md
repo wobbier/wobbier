@@ -5,7 +5,7 @@ projects:
     {
       "slug": "mw2",
       "title": "Modern Warfare II",
-      "background": "img/mw22.jpg",
+      "background": "img/mw2.jpg",
       "description": "",
       "date": "TBD",
       "url": "/game/mw2",

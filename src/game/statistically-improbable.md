@@ -2,6 +2,7 @@
 layout: game-video.html
 title: "Statistically Improbable"
 date: "May 07, 2016"
+slug: "statistically-improbable"
 headerImage: "/img/rather-wasted.gif"
 hasHeaderImage: true
 ---

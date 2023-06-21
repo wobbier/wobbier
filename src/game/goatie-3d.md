@@ -1,6 +1,7 @@
 ---
 layout: game-video.html
 title: "Goatie 3D"
+slug: "goatie-3d"
 date: "May 07, 2016"
 url: n7i_AMazYZ0
 hasVideo: true

@@ -2,9 +2,10 @@
 layout: game-video.html
 title: "Disney Magic Kingdoms - Gameloft"
 date: "March 18, 2016"
+slug: "dmk"
 url: zEIor5XQT-o
 hasVideo: true
-embed-image: "https://wobbier.com/img/dmk.jpg"
+embed-image: "https://mitch.gg/img/dmk.jpg"
 downloads: [
         {
             "type": "apple",

@@ -4,7 +4,7 @@ title: "Modern Warfare II"
 date: "October 28th, 2022"
 url: tnsOrbljnK0
 hasVideo: true
-embed-image: "https://wobbier.com/img/watch-dogs-legion-thumb.png"
+embed-image: "https://mitch.gg/img/mw2.jpg"
 downloads:
   [
     {

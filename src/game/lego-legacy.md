@@ -3,7 +3,7 @@ layout: game-video.html
 title: "LEGO Legacy: Heroes Unboxed"
 date: "Feb 27th, 2019"
 url: bdU5HlSx7k0
-embed-image: "https://wobbier.com/img/lego-thumb.jpg"
+embed-image: "https://mitch.gg/img/lego-thumb.jpg"
 hasVideo: true
 downloads:
   [

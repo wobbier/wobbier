@@ -4,7 +4,7 @@ title: "Watch Dogs: Legion"
 date: "October 29th, 2020"
 url: L20nioDjCxU
 hasVideo: true
-embed-image: "https://wobbier.com/img/watch-dogs-legion-thumb.png"
+embed-image: "https://mitch.gg/img/watch-dogs-legion-thumb.png"
 downloads:
   [
     {

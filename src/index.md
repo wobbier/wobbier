@@ -3,6 +3,15 @@ layout: layout.html
 projects:
   [
     {
+      "slug": "mw3",
+      "title": "Modern Warfare III",
+      "background": "img/mw3.png",
+      "description": "The ultimate threat awaits.",
+      "date": "TBD",
+      "url": "/game/mw3",
+      "visible": true,
+    },
+    {
       "slug": "mw2",
       "title": "Modern Warfare II",
       "background": "img/mw2.jpg",

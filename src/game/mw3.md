@@ -3,7 +3,7 @@ layout: game-video.html
 title: "Modern Warfare III"
 date: "November 10th, 2023"
 slug: "mw3"
-url: ITIcmA4Zwa8
+url: mHDEDDrGYvo
 hasVideo: true
 embed-image: "https://mitch.gg/img/mw3.png"
 downloads:

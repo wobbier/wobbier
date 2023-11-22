@@ -5,7 +5,7 @@ projects:
     {
       "slug": "mw3",
       "title": "Modern Warfare III",
-      "background": "img/mw3.png",
+      "background": "img/MWIII.jpg",
       "description": "The ultimate threat awaits.",
       "date": "TBD",
       "url": "/game/mw3",

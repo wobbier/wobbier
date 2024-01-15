@@ -62,6 +62,26 @@ projects:
 personal:
   [
     {
+      "slug": "drumsmith",
+      "title": "🤘 Drumsmith",
+      "background": "img/drumsmith.png",
+      "description": "A WIP learning software for aspiring dummers, meant to work with electric drum kits via MIDI input.",
+      "date": "n/a",
+      "url": "https://github.com/wobbier/drumsmith",
+      "visible": true,
+      "external": true,
+    },
+    {
+      "slug": "stack",
+      "title": "⏹️ HEAP",
+      "background": "img/heap.png",
+      "description": "A simple re-creation of the mobile game STACK™️ in my own game engine for educational purposes.",
+      "date": "n/a",
+      "url": "https://github.com/wobbier/stack",
+      "visible": true,
+      "external": true,
+    },
+    {
       "slug": "mitch-engine",
       "title": "🚀 Mitch Engine",
       "background": "img/me-logo.png",

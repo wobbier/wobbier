@@ -347,7 +347,6 @@ nav h1 {
 .mega-game {
   width: 100%;
   height: 100%;
-  background-image: url("/img/mw2-home.jpg");
   background-position: center;
   background-size: cover;
   /*position: relative; cod update*/
@@ -358,7 +357,7 @@ nav h1 {
 .main-nav-white {
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-  background-color: #101010 !important /* #fefefe default */;
+  background-color: #0a0201 !important /* #fefefe default */;
   /*background: rgba(0, 0, 0, 0.2);*/
 }
 .main-nav-white nav h2 a,

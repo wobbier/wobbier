@@ -37,7 +37,7 @@
             </div>
         </nav>
     </header>
-    <div class="mega-game">
+    <div class="mega-game" id="mega-game">
         <div style="bottom: 15px; position:absolute; width: 100%;" class="downArrow">
             <div style="margin: 0 auto; color: white;display: table;
             background: 000000FF;
@@ -85,6 +85,22 @@
     <footer>
         &copy;{{year}} Mitch Andrews
     </footer>
+    <script>
+        window.onload = function() {
+            var element = document.getElementById('mega-game');
+            if (element) {
+                if( Math.random() >= 0.5 )
+                {
+                    element.style.backgroundImage = 'url("/img/mw3-cover.png")';
+                }
+                else
+                {
+                    element.style.backgroundImage = 'url("/img/mw3-cover-2.png")';
+                }
+            }
+        };
+
+    </script>
 </body>
 
 </html>

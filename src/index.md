@@ -3,6 +3,15 @@ layout: layout.html
 projects:
   [
     {
+      "slug": "wz",
+      "title": "Call of Duty: Warzone",
+      "background": "img/wz.png",
+      "description": "Party up and leave no friend behind.",
+      "date": "TBD",
+      "url": "/game/wz",
+      "visible": true,
+    },
+    {
       "slug": "mw3",
       "title": "Modern Warfare III",
       "background": "img/MWIII.jpg",

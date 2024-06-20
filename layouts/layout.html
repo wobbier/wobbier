@@ -89,9 +89,18 @@
         window.onload = function() {
             var element = document.getElementById('mega-game');
             if (element) {
-                if( Math.random() >= 0.5 )
+                var rnd = Math.random();
+                if( rnd <= 0.25 )
                 {
                     element.style.backgroundImage = 'url("/img/mw3-cover.png")';
+                }
+                else if( rnd <= 0.5 )
+                {
+                    element.style.backgroundImage = 'url("/img/mw2-home.jpg")';
+                }
+                else if( rnd <= 0.75 )
+                {
+                    element.style.backgroundImage = 'url("/img/wz-cover.jpg")';
                 }
                 else
                 {

@@ -12,6 +12,15 @@ projects:
       "visible": true,
     },
     {
+      "slug": "bo6",
+      "title": "Call of Duty: Black Ops 6",
+      "background": "img/bo6-cover.png",
+      "description": "Forced to go rogue. Hunted from within. This is Call of Duty.",
+      "date": "October 25, 2024",
+      "url": "/game/bo6",
+      "visible": true,
+    },
+    {
       "slug": "mw3",
       "title": "Modern Warfare III",
       "background": "img/MWIII.jpg",

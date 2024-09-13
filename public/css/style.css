@@ -224,10 +224,6 @@ nav h1 {
   flex-wrap: wrap;
 }
 
-.content-page {
-  margin: 0 auto 0 auto;
-}
-
 .content a {
   color: black;
   text-decoration: none;

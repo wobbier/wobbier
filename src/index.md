@@ -3,6 +3,15 @@ layout: layout.html
 projects:
   [
     {
+      "slug": "bo7",
+      "title": "Call of Duty: Black Ops 7",
+      "background": "img/bo7.png",
+      "description": "Embrace the madness Call of Duty: Black Ops 7",
+      "date": "November 14th, 2025",
+      "url": "/game/bo7",
+      "visible": true,
+    },
+    {
       "slug": "wz",
       "title": "Call of Duty: Warzone",
       "background": "img/wz.png",
